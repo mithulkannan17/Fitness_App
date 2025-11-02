@@ -22,6 +22,7 @@ from sklearn.linear_model import LinearRegression
 from collections import defaultdict
 from sklearn.ensemble import IsolationForest
 
+
 from .models import (
     User, Profile, Activity, SetLog, Food, Injury, 
     Exercise, Workout, TrainingCategory, FitnessActivity, Achievement, UserAchievement, CompetitionCategory, CompetitionType, HealthDataLog
@@ -35,6 +36,7 @@ from .serializers import (
 
 # Set up logging
 logger = logging.getLogger(__name__)
+
 
 class RegisterView(APIView):
     permission_classes = [AllowAny]

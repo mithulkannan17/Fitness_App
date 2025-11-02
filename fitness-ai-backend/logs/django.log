@@ -10619,3 +10619,234 @@ INFO 2025-11-02 17:32:01,765 basehttp 6116 27168 "GET /api/health-data/analysis/
 INFO 2025-11-02 17:32:01,765 basehttp 6116 24320 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
 INFO 2025-11-02 17:32:01,772 views 6116 16648 Fitness plan for 'intermediate' user generated: Kannan
 INFO 2025-11-02 17:32:01,775 basehttp 6116 16648 "GET /api/fitness-plan/ HTTP/1.1" 200 1655
+INFO 2025-11-02 18:30:02,455 basehttp 6116 29556 "OPTIONS /api/fitness-plan/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:02,459 basehttp 6116 16976 "OPTIONS /api/fitness-plan/ HTTP/1.1" 200 0
+WARNING 2025-11-02 18:30:02,475 log 6116 29556 Unauthorized: /api/fitness-plan/
+WARNING 2025-11-02 18:30:02,477 basehttp 6116 29556 "GET /api/fitness-plan/ HTTP/1.1" 401 172
+WARNING 2025-11-02 18:30:02,481 log 6116 29556 Unauthorized: /api/fitness-plan/
+WARNING 2025-11-02 18:30:02,482 basehttp 6116 29556 "GET /api/fitness-plan/ HTTP/1.1" 401 172
+INFO 2025-11-02 18:30:02,484 basehttp 6116 16976 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:02,511 basehttp 6116 29556 "POST /api/token/refresh/ HTTP/1.1" 200 489
+INFO 2025-11-02 18:30:02,521 basehttp 6116 16976 "POST /api/token/refresh/ HTTP/1.1" 200 489
+INFO 2025-11-02 18:30:02,533 views 6116 29556 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:02,535 basehttp 6116 29556 "GET /api/fitness-plan/ HTTP/1.1" 200 1711
+INFO 2025-11-02 18:30:02,551 views 6116 16976 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:02,554 basehttp 6116 16976 "GET /api/fitness-plan/ HTTP/1.1" 200 1675
+INFO 2025-11-02 18:30:05,865 views 6116 16976 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:05,868 basehttp 6116 16976 "GET /api/fitness-plan/ HTTP/1.1" 200 1676
+INFO 2025-11-02 18:30:08,641 basehttp 6116 29556 "OPTIONS /api/performance-dashboard/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:08,642 basehttp 6116 16976 "OPTIONS /api/performance-dashboard/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:08,673 basehttp 6116 16976 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:08,700 basehttp 6116 29556 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:08,724 basehttp 6116 29556 "OPTIONS /api/nutrition-summary/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:08,726 basehttp 6116 16976 "OPTIONS /api/health-data/analysis/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:08,728 basehttp 6116 29464 "OPTIONS /api/nutrition-summary/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:08,738 basehttp 6116 30084 "OPTIONS /api/health-data/analysis/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:08,743 views 6116 16976 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:08,749 basehttp 6116 16976 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:08,756 basehttp 6116 29556 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:08,766 views 6116 30084 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:08,769 views 6116 23896 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:08,769 basehttp 6116 30084 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:08,773 basehttp 6116 23896 "GET /api/fitness-plan/ HTTP/1.1" 200 1724
+INFO 2025-11-02 18:30:08,786 basehttp 6116 16976 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:08,793 views 6116 30084 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:08,795 basehttp 6116 30084 "GET /api/fitness-plan/ HTTP/1.1" 200 1675
+INFO 2025-11-02 18:30:11,220 basehttp 6116 16976 "OPTIONS /api/health-data/history/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:11,221 basehttp 6116 30084 "OPTIONS /api/health-data/history/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:11,228 basehttp 6116 23896 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:11,243 basehttp 6116 30084 "GET /api/health-data/history/ HTTP/1.1" 200 130
+INFO 2025-11-02 18:30:11,246 basehttp 6116 16976 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:11,251 basehttp 6116 23896 "GET /api/health-data/history/ HTTP/1.1" 200 130
+INFO 2025-11-02 18:30:14,913 basehttp 6116 23896 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:14,937 basehttp 6116 16976 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:14,967 views 6116 23896 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:14,970 basehttp 6116 23896 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:14,970 basehttp 6116 30084 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:14,993 views 6116 30084 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:14,993 basehttp 6116 29556 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:14,996 views 6116 16976 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:14,996 basehttp 6116 30084 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:14,999 basehttp 6116 16976 "GET /api/fitness-plan/ HTTP/1.1" 200 1672
+INFO 2025-11-02 18:30:15,017 views 6116 30084 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:15,020 basehttp 6116 30084 "GET /api/fitness-plan/ HTTP/1.1" 200 1696
+INFO 2025-11-02 18:30:21,354 basehttp 6116 29556 "OPTIONS /api/fitness-activities/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:21,354 basehttp 6116 16976 "OPTIONS /api/fitness-activities/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:30:21,373 basehttp 6116 16976 "GET /api/fitness-activities/ HTTP/1.1" 200 5300
+INFO 2025-11-02 18:30:21,373 basehttp 6116 30084 "GET /api/activities/ HTTP/1.1" 200 741
+INFO 2025-11-02 18:30:21,389 basehttp 6116 29556 "GET /api/fitness-activities/ HTTP/1.1" 200 5300
+INFO 2025-11-02 18:30:21,396 basehttp 6116 23896 "GET /api/activities/ HTTP/1.1" 200 741
+INFO 2025-11-02 18:30:24,562 basehttp 6116 23896 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:24,590 basehttp 6116 29556 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:24,626 views 6116 23896 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:24,630 basehttp 6116 23896 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:24,641 views 6116 29556 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:24,650 basehttp 6116 29556 "GET /api/fitness-plan/ HTTP/1.1" 200 1602
+INFO 2025-11-02 18:30:24,655 basehttp 6116 30084 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:24,660 views 6116 16976 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:24,676 basehttp 6116 16976 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:24,686 basehttp 6116 29556 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:24,689 views 6116 23896 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:24,692 basehttp 6116 23896 "GET /api/fitness-plan/ HTTP/1.1" 200 1655
+INFO 2025-11-02 18:30:46,211 basehttp 6116 23896 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:46,241 basehttp 6116 29556 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:30:46,264 views 6116 23896 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:46,268 basehttp 6116 23896 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:46,272 basehttp 6116 16976 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:46,281 views 6116 30084 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:30:46,286 basehttp 6116 30084 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:30:46,293 views 6116 29556 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:46,293 basehttp 6116 23896 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:30:46,297 basehttp 6116 29556 "GET /api/fitness-plan/ HTTP/1.1" 200 1723
+INFO 2025-11-02 18:30:46,312 views 6116 23896 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:30:46,317 basehttp 6116 23896 "GET /api/fitness-plan/ HTTP/1.1" 200 1664
+INFO 2025-11-02 18:31:10,129 views 6116 23896 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:31:10,133 basehttp 6116 23896 "GET /api/fitness-plan/ HTTP/1.1" 200 1677
+INFO 2025-11-02 18:31:10,159 views 6116 29556 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:31:10,172 basehttp 6116 29556 "GET /api/fitness-plan/ HTTP/1.1" 200 1727
+INFO 2025-11-02 18:31:11,504 views 6116 29556 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:31:11,506 basehttp 6116 29556 "GET /api/fitness-plan/ HTTP/1.1" 200 1697
+INFO 2025-11-02 18:35:58,304 basehttp 6116 27580 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:35:58,347 basehttp 6116 6916 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:35:58,371 views 6116 27580 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:35:58,376 basehttp 6116 27580 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:35:58,376 basehttp 6116 23416 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:35:58,390 views 6116 6916 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:35:58,396 basehttp 6116 6916 "GET /api/fitness-plan/ HTTP/1.1" 200 1638
+INFO 2025-11-02 18:35:58,396 basehttp 6116 30300 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:35:58,411 views 6116 27580 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:35:58,412 views 6116 23416 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:35:58,416 basehttp 6116 27580 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:35:58,417 basehttp 6116 23416 "GET /api/fitness-plan/ HTTP/1.1" 200 1662
+INFO 2025-11-02 18:36:01,446 basehttp 6116 27580 "OPTIONS /api/profile/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:01,446 basehttp 6116 23416 "OPTIONS /api/profile/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:01,460 basehttp 6116 23416 "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-11-02 18:36:01,469 basehttp 6116 27580 "GET /api/profile/ HTTP/1.1" 200 303
+INFO 2025-11-02 18:36:01,587 basehttp 6116 27580 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:36:01,627 basehttp 6116 23416 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:36:01,692 basehttp 6116 27580 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:36:01,704 views 6116 30300 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:36:01,708 basehttp 6116 6916 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:36:01,708 basehttp 6116 30300 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:36:01,730 views 6116 23416 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:36:01,731 views 6116 6308 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:36:01,736 basehttp 6116 23416 "GET /api/fitness-plan/ HTTP/1.1" 200 1642
+INFO 2025-11-02 18:36:01,736 basehttp 6116 6308 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:36:01,745 basehttp 6116 27580 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:36:01,759 views 6116 30300 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:36:01,763 basehttp 6116 30300 "GET /api/fitness-plan/ HTTP/1.1" 200 1696
+INFO 2025-11-02 18:36:07,553 basehttp 6116 27580 "OPTIONS /api/training-categories/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:07,553 basehttp 6116 30300 "OPTIONS /api/training-categories/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:07,617 views 6116 30300 Training categories requested by user: Kannan
+INFO 2025-11-02 18:36:07,619 basehttp 6116 30300 "GET /api/training-categories/ HTTP/1.1" 200 14352
+INFO 2025-11-02 18:36:07,676 views 6116 27580 Training categories requested by user: Kannan
+INFO 2025-11-02 18:36:07,678 basehttp 6116 27580 "GET /api/training-categories/ HTTP/1.1" 200 14352
+INFO 2025-11-02 18:36:08,204 basehttp 6116 27580 "OPTIONS /api/calendar-logs/?year=2025&month=11 HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:08,204 basehttp 6116 30300 "OPTIONS /api/calendar-logs/?year=2025&month=11 HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:08,216 basehttp 6116 30300 "GET /api/calendar-logs/?year=2025&month=11 HTTP/1.1" 200 627
+INFO 2025-11-02 18:36:08,228 basehttp 6116 27580 "GET /api/calendar-logs/?year=2025&month=11 HTTP/1.1" 200 627
+INFO 2025-11-02 18:36:09,078 basehttp 6116 27580 "OPTIONS /api/champion-space/categories/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:09,079 basehttp 6116 30300 "OPTIONS /api/champion-space/categories/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:36:09,093 basehttp 6116 30300 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:36:09,103 basehttp 6116 27580 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:36:48,536 basehttp 6116 27580 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:36:48,575 basehttp 6116 30300 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:36:48,587 basehttp 6116 23416 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:36:48,597 views 6116 6308 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:36:48,602 basehttp 6116 6308 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:36:48,602 views 6116 27580 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:36:48,611 basehttp 6116 27580 "GET /api/fitness-plan/ HTTP/1.1" 200 1613
+INFO 2025-11-02 18:36:48,619 basehttp 6116 30300 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:36:48,631 views 6116 23416 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:36:48,633 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:36:48,636 basehttp 6116 23416 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:36:48,637 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1631
+INFO 2025-11-02 18:36:49,690 basehttp 6116 6308 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:36:49,699 basehttp 6116 23416 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:37:00,340 basehttp 6116 23416 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:37:00,364 basehttp 6116 6308 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:37:00,402 views 6116 23416 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:37:00,403 basehttp 6116 30300 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:37:00,407 basehttp 6116 23416 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:37:00,420 views 6116 30300 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:37:00,431 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:00,431 basehttp 6116 27580 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:37:00,435 basehttp 6116 30300 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:37:00,436 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1698
+INFO 2025-11-02 18:37:00,449 views 6116 30300 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:00,451 basehttp 6116 30300 "GET /api/fitness-plan/ HTTP/1.1" 200 1712
+INFO 2025-11-02 18:37:09,036 views 6116 30300 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:09,038 basehttp 6116 30300 "GET /api/fitness-plan/ HTTP/1.1" 200 1689
+INFO 2025-11-02 18:37:09,053 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:09,056 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1727
+INFO 2025-11-02 18:37:12,852 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:12,854 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1641
+INFO 2025-11-02 18:37:13,903 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:13,905 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1672
+INFO 2025-11-02 18:37:14,261 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:14,263 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1677
+INFO 2025-11-02 18:37:14,485 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:14,487 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1718
+INFO 2025-11-02 18:37:14,657 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:37:14,660 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1716
+INFO 2025-11-02 18:39:51,778 basehttp 6116 6308 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:39:51,804 basehttp 6116 30300 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:39:51,832 views 6116 6308 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:39:51,836 basehttp 6116 27580 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:39:51,837 basehttp 6116 6308 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:39:51,851 views 6116 27580 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:39:51,855 basehttp 6116 27580 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:39:51,855 basehttp 6116 23416 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:39:51,858 views 6116 30300 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:39:51,861 basehttp 6116 30300 "GET /api/fitness-plan/ HTTP/1.1" 200 1674
+INFO 2025-11-02 18:39:51,875 views 6116 23416 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:39:51,877 basehttp 6116 23416 "GET /api/fitness-plan/ HTTP/1.1" 200 1704
+INFO 2025-11-02 18:39:54,604 views 6116 23416 Training categories requested by user: Kannan
+INFO 2025-11-02 18:39:54,606 basehttp 6116 23416 "GET /api/training-categories/ HTTP/1.1" 200 14352
+INFO 2025-11-02 18:39:54,664 views 6116 30300 Training categories requested by user: Kannan
+INFO 2025-11-02 18:39:54,666 basehttp 6116 30300 "GET /api/training-categories/ HTTP/1.1" 200 14352
+INFO 2025-11-02 18:39:56,952 basehttp 6116 23416 "OPTIONS /api/meal-plan/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:39:56,952 basehttp 6116 30300 "OPTIONS /api/supplement-recommendations/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:39:56,954 basehttp 6116 6308 "OPTIONS /api/supplement-recommendations/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:39:56,954 basehttp 6116 6916 "OPTIONS /api/supplement-recommendations/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:39:56,955 basehttp 6116 23416 "OPTIONS /api/supplement-recommendations/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:39:56,961 basehttp 6116 28864 "OPTIONS /api/meal-plan/ HTTP/1.1" 200 0
+INFO 2025-11-02 18:39:56,963 views 6116 27580 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:39:56,964 basehttp 6116 27580 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:39:56,970 views 6116 6308 Supplement recommendations generated for user: Kannan
+INFO 2025-11-02 18:39:56,971 basehttp 6116 6308 "GET /api/supplement-recommendations/ HTTP/1.1" 200 780
+INFO 2025-11-02 18:39:56,975 views 6116 28864 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:39:56,977 basehttp 6116 28864 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:39:56,977 views 6116 27580 Supplement recommendations generated for user: Kannan
+INFO 2025-11-02 18:39:56,980 basehttp 6116 27580 "GET /api/supplement-recommendations/ HTTP/1.1" 200 780
+INFO 2025-11-02 18:39:56,984 views 6116 28864 Supplement recommendations generated for user: Kannan
+INFO 2025-11-02 18:39:56,990 basehttp 6116 28864 "GET /api/supplement-recommendations/ HTTP/1.1" 200 780
+INFO 2025-11-02 18:39:56,995 views 6116 27580 Supplement recommendations generated for user: Kannan
+INFO 2025-11-02 18:39:56,998 basehttp 6116 27580 "GET /api/supplement-recommendations/ HTTP/1.1" 200 780
+INFO 2025-11-02 18:39:57,001 views 6116 6916 Full meal plan generated for user: Kannan
+INFO 2025-11-02 18:39:57,002 basehttp 6116 6916 "GET /api/meal-plan/ HTTP/1.1" 200 812
+INFO 2025-11-02 18:39:57,018 views 6116 27580 Full meal plan generated for user: Kannan
+INFO 2025-11-02 18:39:57,019 basehttp 6116 27580 "GET /api/meal-plan/ HTTP/1.1" 200 812
+INFO 2025-11-02 18:39:58,811 basehttp 6116 27580 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:39:58,837 basehttp 6116 6916 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:40:01,100 basehttp 6116 6916 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:40:01,107 basehttp 6116 27580 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:40:03,624 basehttp 6116 6916 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:40:03,624 basehttp 6116 27580 "GET /api/health-data/history/ HTTP/1.1" 200 130
+INFO 2025-11-02 18:40:03,637 basehttp 6116 28864 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:40:03,639 basehttp 6116 6308 "GET /api/health-data/history/ HTTP/1.1" 200 130
+INFO 2025-11-02 18:40:07,255 basehttp 6116 6308 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:40:07,264 basehttp 6116 28864 "GET /api/champion-space/categories/ HTTP/1.1" 200 653
+INFO 2025-11-02 18:40:11,745 basehttp 6116 28864 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:40:11,767 basehttp 6116 6308 "GET /api/performance-dashboard/ HTTP/1.1" 200 817
+INFO 2025-11-02 18:40:11,780 views 6116 27580 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:40:11,783 basehttp 6116 27580 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:40:11,783 basehttp 6116 6916 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:40:11,797 views 6116 6308 Nutrition summary generated for user: Kannan
+INFO 2025-11-02 18:40:11,799 basehttp 6116 27580 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
+INFO 2025-11-02 18:40:11,802 basehttp 6116 6308 "GET /api/nutrition-summary/ HTTP/1.1" 200 399
+INFO 2025-11-02 18:40:11,806 views 6116 28864 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:40:11,810 basehttp 6116 28864 "GET /api/fitness-plan/ HTTP/1.1" 200 1701
+INFO 2025-11-02 18:40:11,823 views 6116 6308 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-02 18:40:11,825 basehttp 6116 6308 "GET /api/fitness-plan/ HTTP/1.1" 200 1649
+INFO 2025-11-02 18:46:25,368 autoreload 6116 26568 C:\Users\mithu\OneDrive\Documents\college (NIE)\Minor Project ( working )\fitness-ai-backend\core\settings.py changed, reloading.

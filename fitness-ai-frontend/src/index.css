@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'react-calendar/dist/Calendar.css';
+
+/* You can also add some custom overrides here if you like */
+.react-calendar {
+    border-radius: 0.5rem;
+    border-color: #e5e7eb;
+}
+
+.react-calendar__tile--active {
+    background: #4F46E5 !important;
+    /* Indigo color */
+    color: white;
+}
+
+.custom-calendar {
+    width: 100%;
+    border: none;
+    background-color: #1F2937;
+    /* Dark background */
+    color: #F9FAFB;
+    /* Light text */
+    border-radius: 0.75rem;
+    /* Rounded corners */
+    padding: 1rem;
+    font-family: inherit;
+}
+
+/* Navigation bar (Month, Year, Arrows) */
+.custom-calendar .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.custom-calendar .react-calendar__navigation button {
+    background: none;
+    border: none;
+    color: #D1D5DB;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.custom-calendar .react-calendar__navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-calendar .react-calendar__navigation__label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Weekday labels (Sun, Mon, Tue...) */
+.custom-calendar .react-calendar__month-view__weekdays__weekday abbr {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #6B7280;
+}
+
+/* All day tiles */
+.custom-calendar .react-calendar__tile {
+    background: none;
+    border: none;
+    color: #D1D5DB;
+    border-radius: 9999px;
+    height: 2.5rem;
+    /* Adjust size as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for day tiles */
+.custom-calendar .react-calendar__tile:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Style for "Today" */
+.custom-calendar .react-calendar__tile--now {
+    background: none;
+    border: 1px solid #4F46E5;
+    /* Indigo border */
+}
+
+.custom-calendar .react-calendar__tile--now:hover {
+    background-color: rgba(79, 70, 229, 0.2);
+}
+
+/* Style for the selected day */
+.custom-calendar .react-calendar__tile--active {
+    background-color: #4F46E5;
+    /* Indigo background */
+    color: white;
+}
+
+.custom-calendar .react-calendar__tile--active:hover {
+    background-color: #4338CA;
+}
+
+/* Style for the workout dots container */
+.custom-calendar .workout-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    gap: 3px;
+}
+
+/* Style for each workout dot */
+.custom-calendar .workout-dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+}
+
+@keyframes spin-gradient {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+ * This is the new class you will add to your card wrappers
+ */
+.animated-border-card {
+    position: relative;
+    overflow: hidden;
+    /* This hides the parts of the gradient that are outside the border */
+    border-radius: 0.75rem;
+    /* This must match your card's border-radius (rounded-xl) */
+}
+
+.animated-border-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: 1;
+    /* Sits behind the content */
+
+    /* The conic gradient that creates the "light" */
+    background: conic-gradient(transparent,
+            rgb(79 70 229 / 0.9),
+            /* indigo-600 */
+            rgb(219 39 119 / 0.9),
+            /* pink-600 */
+            transparent 30%);
+
+    /* Apply the spinning animation */
+    animation: spin-gradient 4s linear infinite;
+}

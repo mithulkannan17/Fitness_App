@@ -1,0 +1,429 @@
+{
+    "categories": [
+        {
+            "name": "Gym",
+            "color_code": "#D0021B",
+            "description": "Guidance for strength and aesthetic competitions.",
+            "competitions": [
+                {
+                    "name": "Powerlifting Meet",
+                    "description": "A plan focused on maximizing strength and recovery for meet day.",
+                    "plan": [
+                        {
+                            "title": "The Day Before",
+                            "order": 1,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Final Carb Load",
+                                    "description": "Focus on easily digestible carbs like pasta, rice, and potatoes. Aim for 7-10g of carbs per kg of bodyweight throughout the day.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Hydration",
+                                    "title": "Stay Hydrated",
+                                    "description": "Drink plenty of water and electrolyte beverages. Avoid alcohol completely.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Recovery",
+                                    "title": "Active Recovery & Mobility",
+                                    "description": "Go for a light walk and perform gentle mobility exercises. Do not stretch intensely.",
+                                    "order": 3
+                                },
+                                {
+                                    "type": "Warning",
+                                    "title": "Avoid Heavy Lifting",
+                                    "description": "Do not perform any heavy squats, bench presses, or deadlifts. Your body must be fully recovered.",
+                                    "order": 4
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Competition Day (3-4 Hours Before)",
+                            "order": 2,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Final Meal",
+                                    "description": "Eat a familiar, balanced meal of complex carbs (oatmeal) and lean protein (whey). Avoid high-fat and high-fiber foods.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Hydration",
+                                    "title": "Sip Fluids",
+                                    "description": "Continue sipping on water. Do not chug large amounts.",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Competition Day (Warm-up)",
+                            "order": 3,
+                            "items": [
+                                {
+                                    "type": "Workout",
+                                    "title": "General Warm-up",
+                                    "description": "5-10 minutes on a stationary bike or light jogging to increase blood flow.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Workout",
+                                    "title": "Specific Warm-up",
+                                    "description": "Start with an empty barbell for your first lift. Perform several sets, gradually increasing the weight towards your opening attempt. Keep reps low (1-3).",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Mindset",
+                                    "title": "Focus and Visualize",
+                                    "description": "Listen to music, stay calm, and visualize successfully completing your lifts.",
+                                    "order": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sports",
+            "color_code": "#F5A623",
+            "description": "Guidance for team and endurance-based sports.",
+            "competitions": [
+                {
+                    "name": "Football Match",
+                    "description": "A plan to ensure you're energized and mobile for game day.",
+                    "plan": [
+                        {
+                            "title": "The Day Before",
+                            "order": 1,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Top Up Glycogen Stores",
+                                    "description": "Eat balanced meals with a focus on complex carbohydrates like brown rice and whole wheat pasta.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Hydration",
+                                    "title": "Consistent Hydration",
+                                    "description": "Drink water consistently throughout the day to ensure you are fully hydrated for the match.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Workout",
+                                    "title": "Light 'Walk-Through'",
+                                    "description": "A very light session focusing on tactics or a short jog and dynamic stretches. Avoid intense sprints or drills.",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Match Day (3-4 Hours Before)",
+                            "order": 2,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Pre-Match Meal",
+                                    "description": "Eat a meal high in carbohydrates, moderate in protein, and low in fat and fiber. Example: Grilled chicken with white rice.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Warning",
+                                    "title": "Avoid New Foods",
+                                    "description": "Do not try any new foods or supplements on match day to prevent potential stomach issues.",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Match Day (Pre-Game Warm-up)",
+                            "order": 3,
+                            "items": [
+                                {
+                                    "type": "Workout",
+                                    "title": "Dynamic Warm-up",
+                                    "description": "Start with a light jog, followed by dynamic stretches like high knees, butt kicks, and leg swings.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Workout",
+                                    "title": "Sport-Specific Drills",
+                                    "description": "Progress to short sprints, agility drills (cone work), and passing/dribbling drills to prepare for game intensity.",
+                                    "order": 2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Endurance",
+            "color_code": "#4A90E2",
+            "description": "Guidance for long-distance events like running and cycling.",
+            "competitions": [
+                {
+                    "name": "Marathon",
+                    "description": "A plan to optimize performance and nutrition for running 42.195km.",
+                    "plan": [
+                        {
+                            "title": "The Day Before",
+                            "order": 1,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Serious Carb Load",
+                                    "description": "Continue carbo-loading. Focus on familiar, easily digestible carbs like rice, pasta, and bread. Avoid excessive fiber.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Hydration",
+                                    "title": "Hyper-Hydration",
+                                    "description": "Sip water and electrolyte drinks all day. Aim for pale straw-colored urine. Don't overdo it right before bed.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Recovery",
+                                    "title": "Total Rest (or Light Shakeout)",
+                                    "description": "Stay off your feet. A 15-20 minute very light jog is okay *only* if it's a firm part of your routine.",
+                                    "order": 3
+                                },
+                                {
+                                    "type": "Preparation",
+                                    "title": "Gear Check",
+                                    "description": "Lay out your complete race kit: shoes, socks, shorts, shirt, bib (pinned on), and timing chip. Charge your watch.",
+                                    "order": 4
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Race Day (3-4 Hours Before)",
+                            "order": 2,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Pre-Race Breakfast",
+                                    "description": "Eat your practiced, high-carb, low-fiber, low-fat meal. Example: Bagel with peanut butter, oatmeal, or a sports bar.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Hydration",
+                                    "title": "Top Off Fluids",
+                                    "description": "Drink about 500ml (16oz) of water or sports drink slowly. Stop drinking 1 hour before the race to allow time for a final bathroom stop.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Mindset",
+                                    "title": "Review Your Plan",
+                                    "description": "Look over your pacing strategy. Visualize crossing the finish line feeling strong. Stay calm and manage nerves.",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Race Day (Warm-up)",
+                            "order": 3,
+                            "items": [
+                                {
+                                    "type": "Workout",
+                                    "title": "Dynamic Warm-up",
+                                    "description": "About 15-20 minutes before the start, perform 10 minutes of very light jogging to get blood flowing.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Workout",
+                                    "title": "Mobility Drills",
+                                    "description": "After the jog, do dynamic stretches: leg swings, walking lunges, and high knees. Avoid static stretching (holding stretches).",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Final Fuel (Optional)",
+                                    "description": "Take one last gel or sip of sports drink 5-10 minutes before the gun if this is part of your practiced strategy.",
+                                    "order": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Physique",
+            "color_code": "#8B572A",
+            "description": "Guidance for aesthetic and bodybuilding competitions.",
+            "competitions": [
+                {
+                    "name": "Bodybuilding Show",
+                    "description": "A plan to finalize aesthetics, posing, and stage presence for 'Peak Week'.",
+                    "plan": [
+                        {
+                            "title": "The Day Before",
+                            "order": 1,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Carb-Up / Water Manipulation",
+                                    "description": "Begin loading carbs (rice cakes, potato) to fill muscles. Follow your coach's specific protocol for water and sodium.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Preparation",
+                                    "title": "Apply Base Tan",
+                                    "description": "Apply the first 1-2 coats of your spray tan. Ensure it's even, dark, and streak-free.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Recovery",
+                                    "title": "Rest & Elevate",
+                                    "description": "Stay off your feet as much as possible. Keep legs elevated to reduce water retention and improve definition.",
+                                    "order": 3
+                                },
+                                {
+                                    "type": "Warning",
+                                    "title": "Avoid Stress",
+                                    "description": "Stress can increase cortisol and negatively impact your look. Relax, meditate, and trust the process.",
+                                    "order": 4
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Show Day (Morning)",
+                            "order": 2,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Breakfast 'Pump' Meal",
+                                    "description": "Eat a small, specific meal practiced during peak week (e.g., rice cakes, jam, a little protein). Sip water *only* as per your plan.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Preparation",
+                                    "title": "Final Tan & Glaze",
+                                    "description": "Apply the final coat of tan. Do not apply oil/glaze until just before going on stage.",
+                                    "order": 2
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Show Day (Backstage Warm-up)",
+                            "order": 3,
+                            "items": [
+                                {
+                                    "type": "Workout",
+                                    "title": "Pumping Up",
+                                    "description": "Use light resistance bands for high-rep curls, lateral raises, and push-ups. Do not exhaust the muscle, just create a pump.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Mindset",
+                                    "title": "Posing Practice",
+                                    "description": "Run through your mandatory poses and your routine. Stay warm, confident, and smile.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Simple Sugars",
+                                    "description": "Have a small amount of simple sugar (e.g., a few pieces of candy, spoonful of honey) 15-20 minutes before stage time for a final vascular boost.",
+                                    "order": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mind Sports",
+            "color_code": "#4F00BC",
+            "description": "Guidance for competitive events based on intellect and strategy.",
+            "competitions": [
+                {
+                    "name": "Chess Tournament",
+                    "description": "A plan to ensure mental acuity, focus, and stamina for a long day of matches.",
+                    "plan": [
+                        {
+                            "title": "The Day Before",
+                            "order": 1,
+                            "items": [
+                                {
+                                    "type": "Mindset",
+                                    "title": "Light Prep Only",
+                                    "description": "Review key openings or endgames, but avoid intense, long study sessions. You cannot cram for this.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Recovery",
+                                    "title": "Prioritize Sleep",
+                                    "description": "The most critical factor. Aim for 8+ hours of quality, uninterrupted sleep to ensure peak cognitive function.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Brain Fuel",
+                                    "description": "Eat balanced meals with complex carbs and healthy fats (e.g., salmon, nuts, dark leafy greens). Avoid heavy, greasy foods.",
+                                    "order": 3
+                                },
+                                {
+                                    "type": "Warning",
+                                    "title": "Limit Screen Time",
+                                    "description": "Avoid excessive video games or social media. Let your brain rest and clear itself.",
+                                    "order": 4
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Tournament Day (Morning)",
+                            "order": 2,
+                            "items": [
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Sustained Energy Breakfast",
+                                    "description": "Eat a breakfast high in protein and complex carbs, but low in sugar. (e.g., Oatmeal with berries or eggs with whole-wheat toast).",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Hydration",
+                                    "title": "Hydrate for Focus",
+                                    "description": "Drink water. Dehydration is a major cause of mental fog. Have coffee/tea *only* if it's a normal part of your routine.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Preparation",
+                                    "title": "Pack Essentials",
+                                    "description": "Pack water, healthy snacks (nuts, fruit), any personal chess clock/set, and score sheets.",
+                                    "order": 3
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Tournament Day (During Event)",
+                            "order": 3,
+                            "items": [
+                                {
+                                    "type": "Mindset",
+                                    "title": "Reset Between Rounds",
+                                    "description": "After a match (win or lose), step away. Get fresh air, walk around. Do not obsess over the last game.",
+                                    "order": 1
+                                },
+                                {
+                                    "type": "Nutrition",
+                                    "title": "Snack Smart",
+                                    "description": "Eat your packed snacks *between* rounds, not during a match. Avoid sugary drinks that lead to a crash.",
+                                    "order": 2
+                                },
+                                {
+                                    "type": "Recovery",
+                                    "title": "Mental Breaks",
+                                    "description": "During the game, if you feel fatigued, get up, stretch, and walk away from the board for 1-2 minutes to clear your head.",
+                                    "order": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

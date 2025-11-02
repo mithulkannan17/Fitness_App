@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Strength Novice",
+        "description": "Lift a total of 50,000 kg in a single month.",
+        "category": "Strength",
+        "metric": "volume",
+        "target_value": 50000,
+        "points_reward": 50
+    },
+    {
+        "name": "Strength Adept",
+        "description": "Lift a total of 200,000 kg in a single month.",
+        "category": "Strength",
+        "metric": "volume",
+        "target_value": 200000,
+        "points_reward": 150
+    },
+    {
+        "name": "Yoga Enthusiast",
+        "description": "Complete 5 hours (300 minutes) of Yoga in a single month.",
+        "category": "Flexibility",
+        "metric": "duration",
+        "target_value": 300,
+        "points_reward": 75
+    },
+    {
+        "name": "Dedicated Athlete (Sport)",
+        "description": "Log 15 sport sessions in a single month.",
+        "category": "Sport",
+        "metric": "frequency",
+        "target_value": 15,
+        "points_reward": 100
+    },
+    {
+        "name": "Consistent Cardio",
+        "description": "Log 15 cardio sessions in a single month.",
+        "category": "Cardio",
+        "metric": "frequency",
+        "target_value": 15,
+        "points_reward": 100
+    },
+    {
+        "name": "Yoga Apprentice",
+        "description": "Complete 2 hours (120 minutes) of yoga in a month.",
+        "category": "Flexibility",
+        "metric": "duration",
+        "target_value": 120,
+        "points_reward": 60
+    },
+    {
+        "name": "Consistent Yogi",
+        "description": "Log 15 yoga sessions in one month.",
+        "category": "Flexibility",
+        "metric": "frequency",
+        "target_value": 15,
+        "points_reward": 80
+    },
+    {
+        "name": "Weekend Warrior",
+        "description": "Log 4 hours (240 minutes) of sports in a month.",
+        "category": "Sport",
+        "metric": "duration",
+        "target_value": 240,
+        "points_reward": 70
+    },
+    {
+        "name": "Getting in the Game",
+        "description": "Log 8 sports sessions in one month.",
+        "category": "Sport",
+        "metric": "frequency",
+        "target_value": 8,
+        "points_reward": 50
+    }
+]

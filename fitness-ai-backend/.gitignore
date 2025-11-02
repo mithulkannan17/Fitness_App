@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+fitness-ai-backend/venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database
+*.sqlite3
+db.sqlite3
+
+# Environment variables
+.env
+
+# Static files (if you collect them to a folder named 'static')
+/static/
+
+# Media files
+/media/

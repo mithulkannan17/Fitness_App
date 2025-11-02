@@ -1,0 +1,1914 @@
+[
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Pull",
+        "affected_part": "Hamstring",
+        "symptoms": "Sharp pain, bruising, swelling",
+        "first_aid": "Rest, ice, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Impingement",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain during overhead movements, weakness",
+        "first_aid": "Rest, ice packs, avoid overhead activities",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Knee Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain, swelling, tenderness around the knee",
+        "first_aid": "Rest, ice application, avoid strain",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Elbow Tendinitis",
+        "affected_part": "Elbow",
+        "symptoms": "Pain, tenderness, difficulty gripping",
+        "first_aid": "Rest, ice, avoid repetitive motions",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Lower Back Strain",
+        "affected_part": "Lower Back",
+        "symptoms": "Pain, stiffness, muscle spasms",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Ankle Sprain",
+        "affected_part": "Ankle",
+        "symptoms": "Pain, swelling, difficulty walking",
+        "first_aid": "RICE method (Rest, Ice, Compression, Elevation)",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Achilles Tendonitis",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Pain above the heel, stiffness, swelling",
+        "first_aid": "Rest, ice application, heel lifts",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Wrist Strain",
+        "affected_part": "Wrist",
+        "symptoms": "Pain, swelling, reduced range of motion",
+        "first_aid": "Rest, ice, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shin Splints",
+        "affected_part": "Shin",
+        "symptoms": "Pain along the shin bone, swelling, tenderness",
+        "first_aid": "Rest, ice application, proper footwear",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Plantar Fasciitis",
+        "affected_part": "Foot",
+        "symptoms": "Heel pain, stiffness in the morning",
+        "first_aid": "Rest, ice, stretching exercises, proper arch support",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Patellar Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain below the kneecap, swelling, difficulty bending knee",
+        "first_aid": "Rest, ice application, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Bursitis",
+        "affected_part": "Shoulder or Hip",
+        "symptoms": "Localized pain, swelling, limited movement",
+        "first_aid": "Rest, ice packs, anti-inflammatory medication",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Carpal Tunnel Syndrome",
+        "affected_part": "Wrist",
+        "symptoms": "Numbness, tingling, weakness in the hand",
+        "first_aid": "Rest, wrist splint, avoid repetitive wrist movement",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "IT Band Syndrome",
+        "affected_part": "Outer Thigh",
+        "symptoms": "Pain on the outer side of the knee or thigh",
+        "first_aid": "Rest, ice application, foam rolling",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Tennis Elbow",
+        "affected_part": "Elbow",
+        "symptoms": "Pain and tenderness around the outside of the elbow",
+        "first_aid": "Rest, ice application, brace support",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Golfer’s Elbow",
+        "affected_part": "Elbow",
+        "symptoms": "Pain and tenderness around the inner elbow",
+        "first_aid": "Rest, ice, stretching, brace support",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Acute Muscle Strain",
+        "affected_part": "Any Muscle Group",
+        "symptoms": "Sudden sharp pain, muscle spasm, weakness",
+        "first_aid": "Rest, ice application, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Bruise (Contusion)",
+        "affected_part": "Any Soft Tissue",
+        "symptoms": "Discoloration, swelling, tenderness",
+        "first_aid": "Rest, ice packs, compression, elevation",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Concussion",
+        "affected_part": "Head",
+        "symptoms": "Confusion, headache, dizziness, nausea",
+        "first_aid": "Rest, avoid bright lights, seek medical attention",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Blister",
+        "affected_part": "Skin",
+        "symptoms": "Fluid-filled bubble on skin",
+        "first_aid": "Clean area, use protective padding, avoid popping",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Shin Splints",
+        "affected_part": "Shin",
+        "symptoms": "Pain along shin bone, tenderness, swelling",
+        "first_aid": "Rest, ice application, proper footwear",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Plantar Fasciitis",
+        "affected_part": "Foot",
+        "symptoms": "Heel pain, stiffness in the morning",
+        "first_aid": "Rest, ice, stretching exercises, proper arch support",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Patellar Tendinitis",
+        "affected_part": "Knee",
+        "symptoms": "Pain below kneecap, swelling, difficulty bending",
+        "first_aid": "Rest, ice application, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Bursitis",
+        "affected_part": "Shoulder or Hip",
+        "symptoms": "Localized pain, swelling, limited movement",
+        "first_aid": "Rest, ice packs, anti-inflammatory medication",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Carpal Tunnel Syndrome",
+        "affected_part": "Wrist",
+        "symptoms": "Numbness, tingling, weakness in hand",
+        "first_aid": "Rest, wrist splint, avoid repetitive wrist movement",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "IT Band Syndrome",
+        "affected_part": "Outer Thigh",
+        "symptoms": "Pain on outer side of knee or thigh",
+        "first_aid": "Rest, ice application, foam rolling",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Tennis Elbow",
+        "affected_part": "Elbow",
+        "symptoms": "Pain and tenderness around outside of elbow",
+        "first_aid": "Rest, ice application, brace support",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Golfer’s Elbow",
+        "affected_part": "Elbow",
+        "symptoms": "Pain and tenderness around inner elbow",
+        "first_aid": "Rest, ice, stretching, brace support",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Acute Muscle Strain",
+        "affected_part": "Any Muscle Group",
+        "symptoms": "Sudden sharp pain, muscle spasm, weakness",
+        "first_aid": "Rest, ice application, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Bruise (Contusion)",
+        "affected_part": "Any Soft Tissue",
+        "symptoms": "Discoloration, swelling, tenderness",
+        "first_aid": "Rest, ice packs, compression, elevation",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Dislocated Shoulder",
+        "affected_part": "Shoulder",
+        "symptoms": "Severe pain, deformity, limited mobility",
+        "first_aid": "Immobilize, seek emergency medical care",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Hip Flexor Strain",
+        "affected_part": "Hip",
+        "symptoms": "Pain in front of hip, stiffness, swelling",
+        "first_aid": "Rest, ice application, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Groin Pull",
+        "affected_part": "Groin",
+        "symptoms": "Sharp pain, difficulty in movement, swelling",
+        "first_aid": "Rest, ice application, compression, gentle stretching",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Ankle Fracture",
+        "affected_part": "Ankle",
+        "symptoms": "Severe pain, swelling, inability to bear weight",
+        "first_aid": "Immobilization, immediate medical evaluation",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Stress Fracture",
+        "affected_part": "Bones",
+        "symptoms": "Localized pain increasing with activity",
+        "first_aid": "Rest, avoid impact activities, medical imaging",
+        "treatment_type": "Professional Consultation",
+        "severity": "moderate"
+    },
+    {
+        "name": "Rotator Cuff Tear",
+        "affected_part": "Shoulder",
+        "symptoms": "Pain, weakness, limited range of motion",
+        "first_aid": "Rest, ice, medical assessment",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Meniscus Tear",
+        "affected_part": "Knee",
+        "symptoms": "Knee pain, swelling, difficulty extending leg",
+        "first_aid": "Rest, ice application, medical evaluation",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Whiplash",
+        "affected_part": "Neck",
+        "symptoms": "Neck pain, stiffness, headaches",
+        "first_aid": "Rest, ice application, gentle neck exercises",
+        "treatment_type": "Professional Consultation",
+        "severity": "moderate"
+    },
+    {
+        "name": "Shoulder Dislocation",
+        "affected_part": "Shoulder",
+        "symptoms": "Severe pain, visible deformity, inability to move shoulder",
+        "first_aid": "Immobilize, seek immediate medical attention",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Tibialis Posterior Tendonitis",
+        "affected_part": "Ankle",
+        "symptoms": "Pain along the inside of the ankle, swelling",
+        "first_aid": "Rest, ice, orthotics support",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Hamstring Tear",
+        "affected_part": "Hamstring",
+        "symptoms": "Sudden sharp pain, swelling, muscle weakness",
+        "first_aid": "Rest, ice, compression, elevation",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Ankle Tendonitis",
+        "affected_part": "Ankle",
+        "symptoms": "Pain around ankle tendons, swelling",
+        "first_aid": "Rest, ice application, compression bandage",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    },
+    {
+        "name": "Achilles Rupture",
+        "affected_part": "Achilles Tendon",
+        "symptoms": "Sudden sharp pain, inability to walk",
+        "first_aid": "Immobilize, urgent medical assessment",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Scaphoid Fracture",
+        "affected_part": "Wrist",
+        "symptoms": "Pain in the anatomical snuffbox, swelling",
+        "first_aid": "Immobilization, urgent imaging",
+        "treatment_type": "Professional Consultation",
+        "severity": "moderate"
+    },
+    {
+        "name": "Spinal Disc Herniation",
+        "affected_part": "Back",
+        "symptoms": "Back pain, radiating leg pain, numbness",
+        "first_aid": "Rest, ice, medical evaluation",
+        "treatment_type": "Professional Consultation",
+        "severity": "severe"
+    },
+    {
+        "name": "Costochondritis",
+        "affected_part": "Chest",
+        "symptoms": "Sharp chest pain, tenderness",
+        "first_aid": "Rest, anti-inflammatory medication",
+        "treatment_type": "Conservative",
+        "severity": "mild"
+    },
+    {
+        "name": "Hamstring Tendinopathy",
+        "affected_part": "Hamstring",
+        "symptoms": "Persistent pain, swelling, weakness",
+        "first_aid": "Rest, ice application, physiotherapy",
+        "treatment_type": "Conservative",
+        "severity": "moderate"
+    }
+]

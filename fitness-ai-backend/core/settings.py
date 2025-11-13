@@ -14,7 +14,13 @@ SECRET_KEY = 'django-insecure-@wa(x4+es9j$f8(%t1emh@a7u4nitmjhhjcz929g+ux$x8b%_u
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '.onrender.com']
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1', 
+    '0.0.0.0', 
+    '.onrender.com', 
+    'fitness-app-1-2awu.onrender.com'  # <-- ADD THIS LINE
+]
 
 
 # Application definition

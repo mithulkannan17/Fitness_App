@@ -18583,3 +18583,4 @@ INFO 2025-11-13 14:37:48,034 views 11352 13768 Nutrition summary generated for u
 INFO 2025-11-13 14:37:48,037 basehttp 11352 13768 "GET /api/nutrition-summary/ HTTP/1.1" 200 398
 INFO 2025-11-13 14:37:48,037 basehttp 11352 2688 "GET /api/health-data/analysis/ HTTP/1.1" 200 89
 INFO 2025-11-13 14:37:48,041 views 11352 5992 Fitness plan for 'intermediate' user generated: Kannan
+INFO 2025-11-13 14:37:48,044 basehttp 11352 5992 "GET /api/fitness-plan/ HTTP/1.1" 200 1481

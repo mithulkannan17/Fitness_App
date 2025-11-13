@@ -23,10 +23,10 @@ const Welcome = () => {
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="animate-fade-in-up">
                             <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-                                Unlock Your Peak Performance with <span className="text-indigo-400">AI</span>.
+                                Unlock Your Peak Performance with <span className="text-indigo-400">FitMind</span>.
                             </h1>
                             <p className="text-lg text-gray-300 mb-8">
-                                FitMind AI creates hyper-personalized training and nutrition plans, analyzes your performance, and helps prevent injuries—all powered by cutting-edge artificial intelligence.
+                                FitMind creates hyper-personalized training and nutrition plans, analyzes your performance, and helps prevent injuries.
                             </p>
                             <Link to="/signup" className="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-indigo-500 transition-colors duration-300">
                                 Get Started for Free

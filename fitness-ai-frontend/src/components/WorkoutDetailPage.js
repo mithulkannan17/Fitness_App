@@ -53,9 +53,18 @@ const WorkoutDetailPage = () => {
         if (matchedActivity) {
             setSelectedExercise(matchedActivity);
         } else {
-            alert(`Could not find a matching activity named "${exerciseToLog.name}" in the main fitness library. Please ensure the names in your data files are identical.`);
+            console.warn(
+                `Activity "${exerciseToLog.name}" not found in fitness library. Logging as custom activity.`
+            );
+
+            // Still allow the user to log it
+            setSelectedExercise({
+                ...exerciseToLog,
+                isCustom: true, // optional flag
+            });
         }
     };
+
 
     const handleLogSuccess = (loggedActivity) => {
         alert(`Successfully logged "${loggedActivity.name}"!`);

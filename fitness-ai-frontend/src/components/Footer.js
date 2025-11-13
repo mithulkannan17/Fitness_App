@@ -17,14 +17,14 @@ const Footer = () => {
 
             <footer className="bg-gray-800 text-gray-400 py-12">
                 <div className="container mx-auto px-4 text-center">
-                    <p className="mb-4">AI-powered personal fitness coaching, nutrition planning, and injury prevention.</p>
+                    <p className="mb-4">Personal fitness coaching, nutrition planning, and injury prevention.</p>
                     <div className="flex justify-center space-x-4 mb-4">
                         <a href="# " className="bg-gray-700 p-3 rounded-full hover:bg-indigo-500 transition-colors"><FaFacebookF /></a>
                         <a href="# " className="bg-gray-700 p-3 rounded-full hover:bg-indigo-500 transition-colors"><FaInstagram /></a>
                         <a href="# " className="bg-gray-700 p-3 rounded-full hover:bg-indigo-500 transition-colors"><FaTwitter /></a>
                     </div>
                     <p className="text-sm">
-                        &copy; {new Date().getFullYear()} FitMind AI. All rights reserved. | <a href="# " className="hover:underline">Privacy Policy</a> | <a href="# " className="hover:underline">Terms of Service</a>
+                        &copy; {new Date().getFullYear()} FitMind. All rights reserved. | <a href="# " className="hover:underline">Privacy Policy</a> | <a href="# " className="hover:underline">Terms of Service</a>
                     </p>
                 </div>
             </footer>

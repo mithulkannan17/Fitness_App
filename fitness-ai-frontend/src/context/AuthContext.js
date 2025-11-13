@@ -76,20 +76,41 @@ export const AuthProvider = ({ children }) => {
         try {
             setError(null);
             setLoading(true);
-            await authAPI.register(userData);
-            return await login({ username: userData.username, password: userData.password });
+
+            // Register user first
+            const registerRes = await authAPI.register(userData);
+
+            // Auto login after successful registration
+            const loginRes = await login({
+                username: userData.username,
+                password: userData.password
+            });
+
+            // ✅ Return consistent structure expected by Signup.js
+            if (loginRes && loginRes.success) {
+                return {
+                    success: true,
+                    data: registerRes.data || loginRes.data, // send user info forward
+                };
+            } else {
+                return {
+                    success: false,
+                    error: loginRes?.error || 'Login after registration failed.',
+                };
+            }
         } catch (error) {
             if (error.response && error.response.status === 400 && error.response.data) {
                 return { success: false, error: error.response.data };
             }
 
             const errorMessage = handleAPIError(error);
-            setError(errorMessage); // Set the generic error message
+            setError(errorMessage);
             return { success: false, error: errorMessage };
         } finally {
             setLoading(false);
         }
     };
+
 
     const logout = () => {
         localStorage.removeItem('access_token');

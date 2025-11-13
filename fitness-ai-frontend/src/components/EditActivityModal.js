@@ -8,8 +8,18 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
     const [error, setError] = useState('');
 
     useEffect(() => {
-        setFormData({ ...activity });
+        // Ensure sets has all fields to avoid "uncontrolled component" warnings
+        const completeSets = activity.sets.map(set => ({
+            exercise_name: set.exercise_name || '',
+            weight_kg: set.weight_kg || '',
+            reps: set.reps || '',
+            distance_km: set.distance_km || '',
+            duration_minutes: set.duration_minutes || '',
+            ...set // spread remaining fields like id
+        }));
+        setFormData({ ...activity, sets: completeSets });
     }, [activity]);
+
 
     if (!activity) return null;
 
@@ -26,7 +36,12 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
 
     const addSet = () => {
         const lastSet = formData.sets[formData.sets.length - 1];
-        setFormData(prev => ({ ...prev, sets: [...prev.sets, { exercise_name: lastSet?.exercise_name || '', weight_kg: '', reps: '' }] }));
+        setFormData(prev => ({
+            ...prev, sets: [
+                ...prev.sets,
+                { exercise_name: lastSet?.exercise_name || '', weight_kg: '', reps: '', distance_km: '', duration_minutes: '' }
+            ]
+        }));
     };
 
     const removeSet = (index) => {
@@ -37,8 +52,23 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
         e.preventDefault();
         setLoading(true);
         setError('');
+
+        // Clean the set data before sending, converting empty strings to null
+        const cleanedData = {
+            ...formData,
+            sets: formData.sets.map(set => ({
+                id: set.id, // Keep ID for existing sets
+                exercise_name: set.exercise_name,
+                weight_kg: set.weight_kg ? parseFloat(set.weight_kg) : null,
+                reps: set.reps ? parseInt(set.reps, 10) : null,
+                distance_km: set.distance_km ? parseFloat(set.distance_km) : null,
+                duration_minutes: set.duration_minutes ? parseInt(set.duration_minutes, 10) : null,
+                rest_seconds: set.rest_seconds ? parseInt(set.rest_seconds, 10) : null,
+            }))
+        };
+
         try {
-            const response = await activitiesAPI.update(activity.id, formData);
+            const response = await activitiesAPI.update(activity.id, cleanedData);
             onSave(response.data);
             onClose();
         } catch (err) {
@@ -47,6 +77,7 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
             setLoading(false);
         }
     };
+
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
@@ -66,11 +97,40 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
                     <div className="space-y-2">
                         <h3 className="text-lg font-semibold">Sets</h3>
                         {formData.sets.map((set, index) => (
-                            <div key={index} className="flex gap-2 items-center p-2 bg-gray-50 dark:bg-gray-700/50 rounded-md">
-                                <input type="text" value={set.exercise_name} onChange={(e) => handleSetChange(index, 'exercise_name', e.target.value)} placeholder="Exercise" className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
-                                <input type="number" value={set.weight_kg} onChange={(e) => handleSetChange(index, 'weight_kg', e.target.value)} placeholder="kg" className="w-24 p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
-                                <input type="number" value={set.reps} onChange={(e) => handleSetChange(index, 'reps', e.target.value)} placeholder="reps" className="w-24 p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
-                                <button type="button" onClick={() => removeSet(index)} className="text-red-500 hover:text-red-700 p-2"><FaTrash /></button>
+                            <div key={index} className="flex flex-col gap-2 p-2 bg-gray-50 dark:bg-gray-700/50 rounded-md border dark:border-gray-600">
+                                <div className="flex justify-between items-center">
+                                    <input
+                                        type="text"
+                                        value={set.exercise_name}
+                                        onChange={(e) => handleSetChange(index, 'exercise_name', e.target.value)}
+                                        placeholder="Exercise"
+                                        className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100 font-semibold"
+                                    />
+                                    <button type="button" onClick={() => removeSet(index)} className="text-red-500 hover:text-red-700 p-2 ml-2"><FaTrash /></button>
+                                </div>
+
+                                <div className="flex gap-2">
+                                    {/* Strength Inputs */}
+                                    {(!formData.category || formData.category === 'Strength') && (
+                                        <>
+                                            <input type="number" value={set.weight_kg} onChange={(e) => handleSetChange(index, 'weight_kg', e.target.value)} placeholder="kg" className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
+                                            <input type="number" value={set.reps} onChange={(e) => handleSetChange(index, 'reps', e.target.value)} placeholder="reps" className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
+                                        </>
+                                    )}
+
+                                    {/* Cardio Inputs */}
+                                    {(formData.category === 'Cardio') && (
+                                        <>
+                                            <input type="number" value={set.distance_km} onChange={(e) => handleSetChange(index, 'distance_km', e.target.value)} placeholder="km" className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
+                                            <input type="number" value={set.duration_minutes} onChange={(e) => handleSetChange(index, 'duration_minutes', e.target.value)} placeholder="min" className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
+                                        </>
+                                    )}
+
+                                    {/* Flexibility/Other Inputs */}
+                                    {(formData.category === 'Flexibility' || formData.category === 'Sport' || formData.category === 'Recovery') && (
+                                        <input type="number" value={set.duration_minutes} onChange={(e) => handleSetChange(index, 'duration_minutes', e.target.value)} placeholder="min" className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-gray-100" />
+                                    )}
+                                </div>
                             </div>
                         ))}
                         <button type="button" onClick={addSet} className="w-full text-sm text-indigo-600 font-semibold border-2 border-dashed rounded-md py-2 hover:bg-indigo-50 dark:hover:bg-indigo-900/50">+ Add Set</button>
@@ -84,14 +144,13 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
                 <div className="p-4 bg-gray-50 dark:bg-gray-700/50 border-t dark:border-gray-600 flex justify-end gap-3">
                     <button type="button" onClick={onClose} className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300">Cancel</button>
                     <button
-    type="submit"
-    form="edit-activity-form"
-    disabled={loading}
-    className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 disabled:opacity-50"
->
-    {loading ? 'Saving...' : 'Save Changes'}
-</button>
-
+                        type="submit"
+                        form="edit-activity-form"
+                        disabled={loading}
+                        className="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 disabled:opacity-50"
+                    >
+                        {loading ? 'Saving...' : 'Save Changes'}
+                    </button>
                 </div>
             </div>
         </div>

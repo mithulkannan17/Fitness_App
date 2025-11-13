@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaDumbbell, FaEye, FaEyeSlash, FaCheckCircle } from 'react-icons/fa';
 import { useAuth } from '../../context/AuthContext';
+import ProfileEditPopup from '../../components/ProfileEditPopup'; // 🆕 Add this popup component
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -16,6 +17,8 @@ const Signup = () => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [localErrors, setLocalErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showProfilePopup, setShowProfilePopup] = useState(false); // 🆕
+    const [newUser, setNewUser] = useState(null); // 🆕
 
     useEffect(() => {
         if (isAuthenticated()) {
@@ -76,9 +79,9 @@ const Signup = () => {
             setIsSubmitting(true);
             const result = await register(formData);
             if (result.success) {
-                navigate('/');
+                setNewUser(result.data); // 🆕 store new user
+                setShowProfilePopup(true); // 🆕 show popup instead of navigating to dashboard
             } else if (result.error) {
-                // 4. We got an error. Check if it's an object.
                 if (typeof result.error === 'object') {
                     setLocalErrors(result.error);
                 }
@@ -113,30 +116,35 @@ const Signup = () => {
 
     const passwordStrength = getPasswordStrength(formData.password);
 
+    // 🆕 Dynamic color map (to make Tailwind animations work)
+    const strengthColorClass = {
+        red: 'bg-red-500 text-red-400',
+        orange: 'bg-orange-500 text-orange-400',
+        yellow: 'bg-yellow-500 text-yellow-400',
+        blue: 'bg-blue-500 text-blue-400',
+        green: 'bg-green-500 text-green-400',
+        gray: 'bg-gray-500 text-gray-400'
+    }[passwordStrength.color || 'gray'];
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-900 py-12 px-4">
             <div className="max-w-md w-full">
-                {/* 1. Outer wrapper for the animated border */}
                 <div className="animated-border-card rounded-2xl">
-                    {/* 2. Inner wrapper for the dark card content (16px outer - 3px margin = 13px inner radius) */}
                     <div className="relative z-10 bg-gray-800 rounded-[13px] m-[3px] p-8">
-                        {/* Header */}
                         <div className="text-center mb-8">
                             <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-600 rounded-full mb-4">
                                 <FaDumbbell className="h-8 w-8 text-white" />
                             </div>
                             <h1 className="text-3xl font-bold text-gray-100 mb-2">Create Account</h1>
-                            <p className="text-gray-400">Join FitMind AI and start your fitness journey</p>
+                            <p className="text-gray-400">Join FitMind and start your fitness journey</p>
                         </div>
 
-                        {/* Error Display */}
                         {error && (
                             <div className="mb-6 bg-red-900/50 border border-red-700 rounded-lg p-4">
                                 <p className="text-sm font-medium text-red-200">{error}</p>
                             </div>
                         )}
 
-                        {/* Signup Form */}
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
                                 <label htmlFor="username" className="block text-sm font-medium text-gray-300 mb-2">Username</label>
@@ -148,6 +156,7 @@ const Signup = () => {
                                 />
                                 {getFieldError('username') && <p className="mt-1 text-sm text-red-400">{getFieldError('username')}</p>}
                             </div>
+
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
                                 <input
@@ -158,6 +167,7 @@ const Signup = () => {
                                 />
                                 {getFieldError('email') && <p className="mt-1 text-sm text-red-400">{getFieldError('email')}</p>}
                             </div>
+
                             <div>
                                 <label htmlFor="password" className="block text-sm font-medium text-gray-300 mb-2">Password</label>
                                 <div className="relative">
@@ -171,18 +181,25 @@ const Signup = () => {
                                         {showPassword ? <FaEyeSlash className="h-5 w-5 text-gray-400 hover:text-gray-300" /> : <FaEye className="h-5 w-5 text-gray-400 hover:text-gray-300" />}
                                     </button>
                                 </div>
+
                                 {formData.password && (
                                     <div className="mt-2">
                                         <div className="flex items-center space-x-2">
-                                            <div className="flex-1 bg-gray-600 rounded-full h-2">
-                                                <div className={`h-2 rounded-full transition-all duration-300 bg-${passwordStrength.color}-500`} style={{ width: `${(passwordStrength.strength / 5) * 100}%` }} />
+                                            <div className="flex-1 bg-gray-600 rounded-full h-2 overflow-hidden">
+                                                <div
+                                                    className={`h-2 rounded-full transition-all duration-300 ${strengthColorClass.split(' ')[0]}`}
+                                                    style={{ width: `${(passwordStrength.strength / 5) * 100}%` }}
+                                                />
                                             </div>
-                                            <span className={`text-xs font-medium text-${passwordStrength.color}-400`}>{passwordStrength.label}</span>
+                                            <span className={`text-xs font-medium ${strengthColorClass.split(' ')[1]}`}>
+                                                {passwordStrength.label}
+                                            </span>
                                         </div>
                                     </div>
                                 )}
                                 {getFieldError('password') && <p className="mt-1 text-sm text-red-400">{getFieldError('password')}</p>}
                             </div>
+
                             <div>
                                 <label htmlFor="password_confirm" className="block text-sm font-medium text-gray-300 mb-2">Confirm Password</label>
                                 <div className="relative">
@@ -207,12 +224,12 @@ const Signup = () => {
                                 )}
                                 {getFieldError('password_confirm') && <p className="mt-1 text-sm text-red-400">{getFieldError('password_confirm')}</p>}
                             </div>
+
                             <button type="submit" disabled={isSubmitting || loading} className="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-indigo-700 disabled:opacity-50">
                                 {isSubmitting || loading ? 'Creating Account...' : 'Create Account'}
                             </button>
                         </form>
 
-                        {/* Footer Links */}
                         <div className="mt-6 text-center">
                             <p className="text-sm text-gray-400">
                                 Already have an account?{' '}
@@ -222,6 +239,17 @@ const Signup = () => {
                     </div>
                 </div>
             </div>
+
+            {/*  Profile popup after successful signup */}
+            {showProfilePopup && (
+                <ProfileEditPopup
+                    user={newUser}
+                    onClose={() => {
+                        setShowProfilePopup(false);
+                        navigate('/'); 
+                    }}
+                />
+            )}
         </div>
     );
 };

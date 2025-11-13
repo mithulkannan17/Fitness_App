@@ -65,7 +65,7 @@ const Dashboard = () => {
             {/* 1. Outer wrapper with animation class */}
             <div className="animated-border-card">
                 {/* 2. Inner wrapper for the content, matching the card's original styles */}
-                <div className="relative z-10 bg-white dark:bg-gray-800 rounded-[11px] m-[2px] p-6">
+                <div className="relative z-10 bg-gray-100 border border-gray-200 dark:bg-gray-800 rounded-[11px] m-[2px] p-6">
                     <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">Quick Actions</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <Link to="/activity-log" className="flex items-center p-4 bg-blue-50 dark:bg-blue-900/50 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900 transition">

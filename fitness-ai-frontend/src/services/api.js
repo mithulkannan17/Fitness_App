@@ -95,10 +95,10 @@ export const nutritionAPI = {
 };
 
 export const trainingAPI = {
-    // UPDATED: Corrected paths to match backend
-    getCategories: () => apiClient.get('/training-categories/'),
-    getCategoryDetail: (id) => apiClient.get(`/training-categories/${id}/`),
-    getWorkoutDetail: (id) => apiClient.get(`/workouts/${id}/`),
+
+    getCategories: () => apiClient.get('/training/'),
+    getCategoryDetail: (id) => apiClient.get(`/training/${id}/`),
+    getWorkoutDetail: (id) => apiClient.get(`/training/workout/${id}/`),
 };
 
 // NEW: API for performance dashboard
@@ -120,7 +120,7 @@ export const championSpaceAPI = {
 export const healthAPI = {
     getHistory: (params) => apiClient.get('/health-data/history/', { params }),
     getAnalysis: () => apiClient.get('/health-data/analysis/'),
-    logData: (data) => apiClient.post('/health-data/log/', data), 
+    logData: (data) => apiClient.post('/health-data/log/', data),
 };
 
 // NEW: API for achievements and rewards

@@ -24,7 +24,8 @@ from .views import (
     LogHealthDataView,
     HealthDataHistoryView,
     HealthDataAnalysisView,
-    WorkoutDetailView
+    WorkoutDetailView,
+    
 )
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -38,7 +39,7 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'), #login
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
-    
+ 
     # --- User Profile ---
     path('profile/', ProfileView.as_view(), name='profile'), # <-- CORRECTED THE TYPO HERE
     
@@ -57,9 +58,9 @@ urlpatterns = [
     path('supplement-recommendations/', SupplementRecommendationView.as_view(), name='supplement-recommendations'),
 
     # --- Training Library ---
-    path('training-categories/', TrainingListView.as_view(), name='training-category-list'),
-    path('training-categories/<int:pk>/', TrainingCategoryDetailView.as_view(), name='training-category-detail'),
-    path('workouts/<int:pk>/', WorkoutDetailView.as_view(), name='workout-detail'),
+    path('training/', TrainingListView.as_view(), name='training-list'),
+    path('training/<int:pk>/', TrainingCategoryDetailView.as_view(), name='training-category-detail'),
+    path('training/workout/<int:pk>/', WorkoutDetailView.as_view(), name='workout-detail'),
     
     # --- Data for Frontend Dropdowns ---
     path('fitness-activities/', FitnessActivityListView.as_view(), name='fitness-activity-list'),

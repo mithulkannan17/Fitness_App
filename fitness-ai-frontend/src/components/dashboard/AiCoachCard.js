@@ -78,9 +78,9 @@ const AiCoachCard = () => {
 
     if (!hasCompleteProfile()) {
         return (
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 text-center border border-gray-200 dark:border-gray-700">
+            <div className=" dark:bg-gray-800 rounded-xl shadow-md p-6 text-center border border-gray-200 dark:border-gray-700">
                 <h2 className="text-xl font-bold mb-4 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
-                    <FaRobot className="mr-2" /> AI Coach Recommendations
+                    <FaRobot className="mr-2" /> Coach Recommendations
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300">Complete your profile to unlock your personalized plans.</p>
             </div>
@@ -90,7 +90,7 @@ const AiCoachCard = () => {
     return (
         <div className="animated-border-card">
             {/* 2. This inner wrapper holds all the content and sits on top of the animation */}
-            <div className="relative z-10 bg-white dark:bg-gray-800 rounded-[11px] p-6 m-[2px]">
+            <div className="relative z-10 bg-gray-100 border border-gray-200 dark:bg-gray-800 rounded-[11px] p-6 m-[2px]">
 
                 <h2 className="text-xl font-bold mb-4 text-indigo-600 dark:text-indigo-400 flex items-center">
                     <FaRobot className="mr-2" /> AI Coach Recommendations

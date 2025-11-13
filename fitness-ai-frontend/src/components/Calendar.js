@@ -45,6 +45,12 @@ const LogDetailModal = ({ activities, date, onClose, colors }) => {
     );
 };
 
+const getLocalDateString = (date) => {
+    const yyyy = date.getFullYear();
+    const mm = String(date.getMonth() + 1).padStart(2, '0');
+    const dd = String(date.getDate()).padStart(2, '0');
+    return `${yyyy}-${mm}-${dd}`;
+};
 
 const CalendarLog = () => {
     const [date, setDate] = useState(new Date());
@@ -74,7 +80,7 @@ const CalendarLog = () => {
 
     const tileContent = ({ date, view }) => {
         if (view === 'month') {
-            const dateString = date.toISOString().slice(0, 10);
+            const dateString = getLocalDateString(date);
             if (logs[dateString]) {
                 const categories = [...new Set(logs[dateString].map(act => act.category))];
                 return (
@@ -90,7 +96,7 @@ const CalendarLog = () => {
     };
 
     const handleDayClick = (clickedDate) => {
-        const dateString = clickedDate.toISOString().slice(0, 10);
+        const dateString = getLocalDateString(clickedDate);
         if (logs[dateString]) {
             setSelectedDateData({
                 date: dateString,

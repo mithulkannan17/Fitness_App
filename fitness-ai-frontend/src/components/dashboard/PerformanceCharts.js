@@ -11,7 +11,7 @@ const ChartCard = ({ title, children }) => (
              We use m-[2px] to create the border "thickness" 
              and rounded-[11px] to be slightly smaller than the outer rounded-xl.
         */}
-        <div className="relative z-10 bg-white dark:bg-gray-800 rounded-[11px] m-[2px] p-6">
+        <div className="relative z-10 bg-gray-100 border border-gray-200 dark:bg-gray-800 rounded-[11px] m-[2px] p-6">
             <h3 className="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">{title}</h3>
             <div className="h-64">{children}</div>
         </div>

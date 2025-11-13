@@ -6,7 +6,7 @@ import pandas as pd
 
 from django.db.models import Q, Sum, F, Count, Avg, Max
 from django.contrib.auth import get_user_model
-from rest_framework import generics, status
+from rest_framework import generics, status, serializers
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -77,7 +77,8 @@ class ProfileView(generics.RetrieveUpdateAPIView):
 
 class ActivityListCreateView(generics.ListCreateAPIView):
     """
-    API view for listing and creating user activities
+    API view for listing and creating user activities.
+    Allows logging even if the activity doesn't exist in FitnessActivity.
     """
     serializer_class = ActivitySerializer
     permission_classes = [IsAuthenticated]
@@ -87,11 +88,44 @@ class ActivityListCreateView(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         try:
-            activity = serializer.save(user=self.request.user)
-            logger.info(f"New activity created: {activity.name} for user: {self.request.user.username}")
-        except Exception as e:
-            logger.error(f"Error creating activity for user {self.request.user.username}: {str(e)}")
+            # Get the name safely
+            activity_name = serializer.validated_data.get('name') or self.request.data.get('name')
+            if not activity_name:
+                raise serializers.ValidationError({"detail": "Activity name is required."})
+
+            activity_name = activity_name.strip()
+            logger.info(f"Attempting to log activity: '{activity_name}'")
+
+            # Try to find a matching FitnessActivity (optional link)
+            matching_activity = FitnessActivity.objects.filter(name__iexact=activity_name).first()
+
+            if not matching_activity:
+                matching_activity = FitnessActivity.objects.filter(
+                    Q(name__icontains=activity_name) | Q(name__istartswith=activity_name)
+                ).first()
+
+            if matching_activity:
+                logger.info(f"Linked to existing FitnessActivity: {matching_activity.name}")
+                activity = serializer.save(
+                    user=self.request.user,
+                    linked_fitness_activity=matching_activity  # remove if not in your model
+                )
+            else:
+                # Proceed without a link — still log the user activity
+                logger.warning(
+                    f'No FitnessActivity match found for "{activity_name}". Logging as custom activity.'
+                )
+                activity = serializer.save(user=self.request.user)
+
+            logger.info(f"Activity successfully logged: {activity.name} for user {self.request.user.username}")
+
+        except serializers.ValidationError:
             raise
+        except Exception as e:
+            logger.error(f"Unexpected error while logging activity for {self.request.user.username}: {str(e)}")
+            raise serializers.ValidationError({
+                "detail": "An unexpected error occurred while logging the activity."
+            })
 
 
 class FitnessPlanView(APIView):
@@ -439,7 +473,6 @@ class TrainingListView(generics.ListAPIView):
             )
 
 
-# api/views.py
 
 class NutritionSummaryView(APIView):
     """
@@ -1120,3 +1153,4 @@ class WorkoutDetailView(generics.RetrieveAPIView):
     queryset = Workout.objects.filter(is_active=True)
     serializer_class = WorkoutSerializer
     permission_classes = [IsAuthenticated]
+

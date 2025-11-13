@@ -297,7 +297,7 @@ class WorkoutSerializer(serializers.ModelSerializer):
         model = Workout
         fields = [
             'id', 'name', 'description', 'exercises', 'exercise_count', 
-            'estimated_duration', 'difficulty_level', 'category_name', 'color_code', 'parent_color_code'
+            'estimated_duration', 'difficulty_level', 'category_name', 'color_code', 'parent_color_code', 'imageUrl'
         ]
 
     def get_exercise_count(self, obj):

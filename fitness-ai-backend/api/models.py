@@ -54,6 +54,8 @@ class Profile(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
     reward_points = models.PositiveIntegerField(default=0, help_text="Total points earned from achievements")
+ 
+
 
     def __str__(self):
         full_name = f"{self.first_name} {self.last_name}".strip()
@@ -201,7 +203,7 @@ class Food(models.Model):
 class Injury(models.Model):
     SEVERITY_CHOICES = [('mild', 'Mild'), ('moderate', 'Moderate'), ('severe', 'Severe')]
 
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100)
     affected_part = models.CharField(max_length=100)
     symptoms = models.TextField()
     first_aid = models.TextField()
@@ -212,12 +214,13 @@ class Injury(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return self.name
+        return f"{self.name} ({self.severity})"
 
     class Meta:
         verbose_name = "Injury"
         verbose_name_plural = "Injuries"
         ordering = ['name']
+        unique_together = ('name', 'affected_part', 'severity')
 
 #-------------------------------------------------------------------------------
 
@@ -254,6 +257,7 @@ class Workout(models.Model):
     estimated_duration = models.PositiveIntegerField(null=True, blank=True, help_text="Estimated duration in minutes", validators=[MaxValueValidator(480)])
     difficulty_level = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(10)])
     color_code = models.CharField(max_length=7, default='#7ED321', help_text="Hex color for this workout")
+    imageUrl = models.CharField(max_length=255, blank=True, null=True, help_text="URL for the workout image")
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(default=timezone.now)
 

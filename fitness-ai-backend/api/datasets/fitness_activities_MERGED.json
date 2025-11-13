@@ -1,0 +1,693 @@
+[
+    {
+        "name": "Gym Workouts",
+        "category": "Strength",
+        "color_code": "#D32F2F",
+        "workouts": [
+            {
+                "name": "Chest",
+                "color_code": "#FF7043",
+                "description": "Focuses on building the pectoral muscles.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/Chest.png",
+                "sub_workouts": [
+                    {
+                        "name": "Barbell Bench Press",
+                        "target_muscles": "Chest, Shoulders, Triceps"
+                    },
+                    {
+                        "name": "Incline Dumbbell Press",
+                        "target_muscles": "Upper Chest, Shoulders"
+                    },
+                    {
+                        "name": "Chest Fly Machine",
+                        "target_muscles": "Chest"
+                    },
+                    {
+                        "name": "Push-ups",
+                        "target_muscles": "Chest, Shoulders, Triceps"
+                    },
+                    {
+                        "name": "Bench Dips",
+                        "target_muscles": "Triceps, Chest, Shoulders",
+                        "description": "Triceps and chest exercise using a bench.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "TRX Suspension Training",
+                        "target_muscles": "Full Body",
+                        "description": "Bodyweight training using suspension straps.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Battle Ropes",
+                        "target_muscles": "Shoulders, Core, Arms",
+                        "description": "High-intensity strength and cardio workout.",
+                        "intensity": "high",
+                        "difficulty_level": 8
+                    },
+                    {
+                        "name": "Medicine Ball Slams",
+                        "target_muscles": "Core, Shoulders, Arms",
+                        "description": "Explosive full-body exercise for power.",
+                        "intensity": "high",
+                        "difficulty_level": 7
+                    },
+                    {
+                        "name": "Incline Bench Press",
+                        "target_muscles": "Chest, Shoulders, Triceps",
+                        "description": "Upper chest strength development using an inclined bench.",
+                        "intensity": "high",
+                        "difficulty_level": 6
+                    },
+                    {
+                        "name": "Wall Ball Shots",
+                        "target_muscles": "Full Body",
+                        "description": "Explosive movement throwing a medicine ball to a target.",
+                        "intensity": "high",
+                        "difficulty_level": 8
+                    },
+                    {
+                        "name": "Cable Tricep Pushdowns",
+                        "target_muscles": "Triceps",
+                        "description": "Isolation exercise targeting triceps.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Incline Push-ups",
+                        "target_muscles": "Chest, Shoulders, Triceps",
+                        "description": "A variation of push-ups with hands elevated.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    },
+                    {
+                        "name": "Cable Chest Fly",
+                        "target_muscles": "Chest, Shoulders",
+                        "description": "Chest exercise performed on a cable machine.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Incline Sit-ups",
+                        "target_muscles": "Abs, Core",
+                        "description": "Core strengthening exercise performed on an inclined bench.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Wall Handstand Hold",
+                        "target_muscles": "Shoulders, Core, Arms",
+                        "description": "Isometric exercise focusing on shoulder and core stability.",
+                        "intensity": "high",
+                        "difficulty_level": 7
+                    },
+                    {
+                        "name": "Resistance Band Chest Press",
+                        "target_muscles": "Chest, Shoulders, Triceps",
+                        "description": "Chest exercise using resistance bands.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Medicine Ball Chest Pass",
+                        "target_muscles": "Chest, Core",
+                        "description": "Explosive exercise for chest and core strength.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Cable Bicep Curls",
+                        "target_muscles": "Biceps",
+                        "description": "Biceps isolation exercise using a cable machine.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Incline Leg Raises",
+                        "target_muscles": "Abs, Core",
+                        "description": "Core exercise to target lower abs using an inclined bench.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    }
+                ]
+            },
+            {
+                "name": "Back",
+                "color_code": "#FF8A65",
+                "description": "Builds a strong and wide back.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/back.png",
+                "sub_workouts": [
+                    {
+                        "name": "Pull-ups",
+                        "target_muscles": "Lats, Biceps"
+                    },
+                    {
+                        "name": "Lat Pulldown",
+                        "target_muscles": "Lats"
+                    },
+                    {
+                        "name": "Seated Row",
+                        "target_muscles": "Mid-back, Biceps"
+                    },
+                    {
+                        "name": "Deadlift",
+                        "target_muscles": "Full Body, Lower Back"
+                    },
+                    {
+                        "name": "Medicine Ball Throws",
+                        "target_muscles": "Core, Shoulders, Chest",
+                        "description": "Explosive exercise for core and upper body.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Cable Row",
+                        "target_muscles": "Back, Biceps",
+                        "description": "Back-focused exercise using a cable machine.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Assisted Pull-ups",
+                        "target_muscles": "Back, Biceps",
+                        "description": "Back and biceps exercise with assistance.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Resistance Band Rows",
+                        "target_muscles": "Back, Biceps",
+                        "description": "Back strengthening exercise using a resistance band.",
+                        "intensity": "low",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Glute Kickbacks",
+                        "target_muscles": "Glutes, Hamstrings",
+                        "description": "Targeted exercise to strengthen glutes.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Dumbbell Rows",
+                        "target_muscles": "Back, Biceps",
+                        "description": "Back strengthening exercise using dumbbells.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Cable Face Pull",
+                        "target_muscles": "Upper Back, Rear Shoulders",
+                        "description": "Upper back and shoulder exercise using cable machine.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Glute Kickback Machine",
+                        "target_muscles": "Glutes, Hamstrings",
+                        "description": "Machine-based glute activation exercise.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    }
+                ]
+            },
+            {
+                "name": "Legs",
+                "color_code": "#FFAB91",
+                "description": "A complete workout for lower body strength.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/Legs.png",
+                "sub_workouts": [
+                    {
+                        "name": "Barbell Squats",
+                        "target_muscles": "Quads, Glutes, Hamstrings"
+                    },
+                    {
+                        "name": "Leg Press",
+                        "target_muscles": "Quads, Glutes"
+                    },
+                    {
+                        "name": "Leg Curls",
+                        "target_muscles": "Hamstrings"
+                    },
+                    {
+                        "name": "Standing Calf Raises",
+                        "target_muscles": "Calves"
+                    },
+                    {
+                        "name": "Glute Bridges",
+                        "target_muscles": "Glutes, Hamstrings",
+                        "description": "Isometric exercise for glutes and hamstrings.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    },
+                    {
+                        "name": "Single-leg Deadlifts",
+                        "target_muscles": "Glutes, Hamstrings, Core",
+                        "description": "Balance and strength exercise focusing on hamstrings.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Hip Thrust",
+                        "target_muscles": "Glutes, Hamstrings",
+                        "description": "Glute-focused strength exercise.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Resistance Band Squats",
+                        "target_muscles": "Quads, Glutes, Hamstrings",
+                        "description": "Squats performed with resistance bands to increase difficulty.",
+                        "intensity": "low",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Seated Leg Extensions",
+                        "target_muscles": "Quads",
+                        "description": "Isolation exercise focusing on quadriceps.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    }
+                ]
+            },
+            {
+                "name": "Shoulders",
+                "color_code": "#BCAAA4",
+                "description": "Develops strong and broad shoulders.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/Shoulders.png",
+                "sub_workouts": [
+                    {
+                        "name": "Overhead Press",
+                        "target_muscles": "Shoulders, Triceps"
+                    },
+                    {
+                        "name": "Dumbbell Shoulder Press",
+                        "target_muscles": "Shoulders, Triceps"
+                    },
+                    {
+                        "name": "Lateral Raises",
+                        "target_muscles": "Lateral Deltoids"
+                    },
+                    {
+                        "name": "Overhead Barbell Press",
+                        "target_muscles": "Shoulders, Triceps",
+                        "description": "Upper body strength exercise focusing on shoulders.",
+                        "intensity": "high",
+                        "difficulty_level": 7
+                    },
+                    {
+                        "name": "Overhead Dumbbell Press",
+                        "target_muscles": "Shoulders, Triceps",
+                        "description": "Shoulder and triceps strengthening exercise.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Cable Lateral Raises",
+                        "target_muscles": "Shoulders",
+                        "description": "Isolation exercise targeting shoulder muscles.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    }
+                ]
+            },
+            {
+                "name": "Full Body",
+                "color_code": "#A1887F",
+                "description": "Workouts that target all major muscle groups.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/Full%20body.png",
+                "sub_workouts": [
+                    {
+                        "name": "Kettlebell Swings",
+                        "target_muscles": "Glutes, Hamstrings, Core"
+                    },
+                    {
+                        "name": "Sled Push",
+                        "target_muscles": "Legs, Core, Shoulders"
+                    },
+                    {
+                        "name": "Farmer's Walk",
+                        "target_muscles": "Forearms, Core, Shoulders"
+                    },
+                    {
+                        "name": "Kettlebell Deadlifts",
+                        "target_muscles": "Glutes, Hamstrings, Core",
+                        "description": "Lower body strength exercise using kettlebells.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Farmer\u2019s Carry",
+                        "target_muscles": "Forearms, Core, Shoulders",
+                        "description": "Functional strength exercise focusing on grip, core, and posture.",
+                        "intensity": "high",
+                        "difficulty_level": 6
+                    }
+                ]
+            },
+            {
+                "name": "Core & Abs",
+                "color_code": "#A1887F",
+                "description": "Exercises for core strength and stability.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/abs.png",
+                "sub_workouts": [
+                    {
+                        "name": "Plank",
+                        "target_muscles": "Core, Abs, Lower Back",
+                        "description": "An isometric core strength exercise.",
+                        "intensity": "low",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Russian Twists",
+                        "target_muscles": "Core, Obliques",
+                        "description": "Core exercise focusing on oblique muscles.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Medicine Ball Russian Twists",
+                        "target_muscles": "Core, Obliques",
+                        "description": "Oblique strengthening exercise using a medicine ball.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Side Plank",
+                        "target_muscles": "Core, Obliques",
+                        "description": "Isometric core exercise focusing on obliques.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    },
+                    {
+                        "name": "Reverse Crunch",
+                        "target_muscles": "Abs, Core",
+                        "description": "Core exercise focusing on lower abdominal muscles.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    }
+                ]
+            },
+            {
+                "name": "Strength (Bodyweight)",
+                "color_code": "#BCAAA4",
+                "description": "Bodyweight-only strength exercises.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/strength.png",
+                "sub_workouts": [
+                    {
+                        "name": "Bodyweight Squats",
+                        "target_muscles": "Quads, Glutes, Hamstrings",
+                        "description": "Fundamental lower body exercise using your own body weight.",
+                        "intensity": "moderate",
+                        "difficulty_level": 2
+                    },
+                    {
+                        "name": "Wall Sits",
+                        "target_muscles": "Quads, Glutes",
+                        "description": "Isometric exercise to strengthen quadriceps.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    },
+                    {
+                        "name": "Knee Push-ups",
+                        "target_muscles": "Chest, Shoulders, Triceps",
+                        "description": "Modified push-up focusing on upper body strength.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    },
+                    {
+                        "name": "Pistol Squats",
+                        "target_muscles": "Quads, Glutes, Hamstrings",
+                        "description": "Single-leg squat focusing on balance and strength.",
+                        "intensity": "high",
+                        "difficulty_level": 8
+                    },
+                    {
+                        "name": "Bodyweight Lunges",
+                        "target_muscles": "Quads, Glutes, Hamstrings",
+                        "description": "Leg strengthening exercise using body weight.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Diamond Push-ups",
+                        "target_muscles": "Triceps, Chest",
+                        "description": "Push-up variation targeting triceps with hands in diamond shape.",
+                        "intensity": "high",
+                        "difficulty_level": 6
+                    },
+                    {
+                        "name": "Side Lunges",
+                        "target_muscles": "Glutes, Quads, Hamstrings",
+                        "description": "Lower body exercise targeting inner and outer thighs.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Reverse Lunges",
+                        "target_muscles": "Glutes, Quads, Hamstrings",
+                        "description": "Single-leg strengthening exercise focusing on glutes and quads.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    }
+                ]
+            },
+            {
+                "name": "Plyometric Training",
+                "color_code": "#FFAB91",
+                "description": "Explosive power exercises.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/Plyometric%20Training.png",
+                "sub_workouts": []
+            }
+        ]
+    },
+    {
+        "name": "Cardio Programs",
+        "category": "Cardio",
+        "color_code": "#1976D2",
+        "workouts": [
+            {
+                "name": "High Intensity Cardio",
+                "color_code": "#64B5F6",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/jump%20rope.png",
+                "sub_workouts": [
+                    {
+                        "name": "Running (High Intensity)",
+                        "target_muscles": "Cardiovascular System"
+                    },
+                    {
+                        "name": "Jump Rope",
+                        "target_muscles": "Full Body"
+                    },
+                    {
+                        "name": "Sprints",
+                        "target_muscles": "Legs, Core"
+                    },
+                    {
+                        "name": "Spinning Class",
+                        "target_muscles": "Legs, Core, Cardiovascular System",
+                        "description": "Indoor cycling group class focusing on intensity and endurance.",
+                        "intensity": "high",
+                        "difficulty_level": 7
+                    },
+                    {
+                        "name": "High Knees",
+                        "target_muscles": "Legs, Core",
+                        "description": "Running in place lifting knees high to increase heart rate.",
+                        "intensity": "high",
+                        "difficulty_level": 6
+                    },
+                    {
+                        "name": "Wall Climber",
+                        "target_muscles": "Core, Shoulders",
+                        "description": "Dynamic core exercise mimicking climbing motion.",
+                        "intensity": "high",
+                        "difficulty_level": 7
+                    },
+                    {
+                        "name": "Mountain Climbers",
+                        "target_muscles": "Core, Shoulders, Legs",
+                        "description": "Dynamic core and cardio exercise simulating climbing.",
+                        "intensity": "high",
+                        "difficulty_level": 6
+                    }
+                ]
+            },
+            {
+                "name": "Moderate Intensity Cardio",
+                "color_code": "#90CAF9",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/cycling.png",
+                "sub_workouts": [
+                    {
+                        "name": "Jogging",
+                        "target_muscles": "Cardiovascular System"
+                    },
+                    {
+                        "name": "Cycling",
+                        "target_muscles": "Legs"
+                    },
+                    {
+                        "name": "Swimming",
+                        "target_muscles": "Full Body"
+                    },
+                    {
+                        "name": "Hiking",
+                        "target_muscles": "Legs, Glutes, Cardiovascular System",
+                        "description": "Walking long distances in natural terrain.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Rowing Machine",
+                        "target_muscles": "Back, Legs, Core, Arms",
+                        "description": "Simulates rowing to provide a full-body cardio workout.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Elliptical Training",
+                        "target_muscles": "Legs, Core, Arms",
+                        "description": "Low-impact cardio exercise for the whole body.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Zumba",
+                        "target_muscles": "Full Body",
+                        "description": "Dance-based cardio exercise.",
+                        "intensity": "moderate",
+                        "difficulty_level": 3
+                    },
+                    {
+                        "name": "Step Aerobics",
+                        "target_muscles": "Legs, Glutes, Core",
+                        "description": "Aerobic exercise using an elevated platform.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Treadmill Running",
+                        "target_muscles": "Legs, Core, Cardiovascular System",
+                        "description": "Controlled indoor running for cardio endurance.",
+                        "intensity": "moderate",
+                        "difficulty_level": 4
+                    },
+                    {
+                        "name": "Step Mill",
+                        "target_muscles": "Legs, Glutes, Cardiovascular System",
+                        "description": "Climbing steps on a machine to improve endurance.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    },
+                    {
+                        "name": "Stair Climber Machine",
+                        "target_muscles": "Legs, Glutes, Cardiovascular System",
+                        "description": "Climbing stairs machine to improve cardio and leg strength.",
+                        "intensity": "moderate",
+                        "difficulty_level": 5
+                    }
+                ]
+            },
+            {
+                "name": "Cardio (Low Intensity)",
+                "color_code": "#BBDEFB",
+                "description": "Low-impact and steady-state cardio.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/Cardio.png",
+                "sub_workouts": [
+                    {
+                        "name": "Walking",
+                        "target_muscles": "Legs, Glutes",
+                        "description": "A low-impact cardio exercise.",
+                        "intensity": "low",
+                        "difficulty_level": 1
+                    },
+                    {
+                        "name": "Low-impact Aerobics",
+                        "target_muscles": "Full Body",
+                        "description": "Gentle aerobics focusing on cardiovascular health without joint strain.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Flexibility & Wellness",
+        "category": "Flexibility",
+        "color_code": "#00796B",
+        "workouts": [
+            {
+                "name": "Yoga & Mobility",
+                "color_code": "#4DB6AC",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/yoga.png",
+                "sub_workouts": [
+                    {
+                        "name": "Vinyasa Yoga",
+                        "target_muscles": "Full Body"
+                    },
+                    {
+                        "name": "Stretching",
+                        "target_muscles": "Full Body"
+                    },
+                    {
+                        "name": "Pilates",
+                        "target_muscles": "Core, Back"
+                    },
+                    {
+                        "name": "Tai Chi",
+                        "target_muscles": "Full Body",
+                        "description": "A gentle form of martial arts focusing on slow movements.",
+                        "intensity": "low",
+                        "difficulty_level": 2
+                    },
+                    {
+                        "name": "Lat Stretch",
+                        "target_muscles": "Back, Shoulders",
+                        "description": "Stretching exercise targeting the lat muscles.",
+                        "intensity": "low",
+                        "difficulty_level": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sports & Misc",
+        "category": "Sport",
+        "color_code": "#F5A623",
+        "workouts": [
+            {
+                "name": "Sports",
+                "color_code": "#FFB74D",
+                "description": "Sports and recreational activities.",
+                "imageUrl": "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/Football.png",
+                "sub_workouts": [
+                    {
+                        "name": "Football Match",
+                        "target_muscles": "Full Body",
+                        "description": "A competitive football game.",
+                        "intensity": "high",
+                        "difficulty_level": 8
+                    },
+                    {
+                        "name": "Mountain Biking",
+                        "target_muscles": "Legs, Core, Cardiovascular System",
+                        "description": "Off-road cycling that requires strength and endurance.",
+                        "intensity": "high",
+                        "difficulty_level": 7
+                    },
+                    {
+                        "name": "Boxing Drills",
+                        "target_muscles": "Full Body",
+                        "description": "High-intensity workout focusing on speed and coordination.",
+                        "intensity": "high",
+                        "difficulty_level": 7
+                    }
+                ]
+            }
+        ]
+    }
+]

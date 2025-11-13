@@ -107,7 +107,7 @@ const Nutrition = () => {
                     </div>
                 )}
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 border-1">
                     <div className="lg:col-span-2 space-y-8">
                         {/* Nutrition Goals Card (Unchanged) */}
                         {hasCompleteProfile() && nutritionSummary && (

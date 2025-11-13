@@ -2,6 +2,7 @@ import json
 import os
 from django.core.management.base import BaseCommand
 from django.conf import settings
+from pathlib import Path  # <-- Import Path
 from api.models import (
     Food, Injury, TrainingCategory, Workout, Exercise,
     FitnessActivity, Achievement, CompetitionCategory,
@@ -26,10 +27,21 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = settings.BASE_DIR / 'api' / 'datasets'
+        
+        # --- START OF EDIT ---
+        # Check if we are running on Render (Render sets this env var)
+        if 'RENDER' in os.environ:
+            # On Render, secret files are at /etc/secrets/
+            data_dir = Path('/etc/secrets')
+        else:
+            # Locally, files are in api/datasets
+            data_dir = settings.BASE_DIR / 'api' / 'datasets'
+        # --- END OF EDIT ---
         
         if not data_dir.exists():
             self.stdout.write(self.style.ERROR(f'Data directory not found: {data_dir}'))
+            if 'RENDER' in os.environ:
+                self.stdout.write(self.style.ERROR('Please ensure your Secret Files are uploaded correctly on Render.'))
             return
 
         clear_data = options['clear']
@@ -134,6 +146,8 @@ class Command(BaseCommand):
         
         if clear_data:
             TrainingCategory.objects.all().delete()
+            Workout.objects.all().delete() # Added Workout to ensure images are updated
+            Exercise.objects.all().delete() # Added Exercise
             FitnessActivity.objects.all().delete()
             self.stdout.write('Cleared existing training and fitness activity data.')
 
@@ -173,7 +187,7 @@ class Command(BaseCommand):
                             'estimated_duration': workout_data.get('estimated_duration'),
                             'difficulty_level': workout_data.get('difficulty_level', 1),
                             'color_code': workout_data.get('color_code', '#7ED321'),
-                            'imageUrl': workout_data.get('imageUrl'),
+                            'imageUrl': workout_data.get('imageUrl'), # This field is correct
                         }
                     )
                     if workout_created: workouts_created += 1

@@ -17,7 +17,6 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // RENAMED: from refreshProfile to fetchProfile for consistency
     const fetchProfile = useCallback(async () => {
         try {
             const response = await profileAPI.get();
@@ -25,9 +24,16 @@ export const AuthProvider = ({ children }) => {
             return response.data;
         } catch (error) {
             console.error('Failed to refresh profile:', error);
-            // Don't logout here, token might still be valid for other things
             return null;
         }
+    }, []);
+
+    const logout = useCallback(() => {
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('refresh_token');
+        setUser(null);
+        setProfile(null);
+        setError(null);
     }, []);
 
     const checkAuthStatus = useCallback(async () => {
@@ -35,17 +41,15 @@ export const AuthProvider = ({ children }) => {
         const token = localStorage.getItem('access_token');
         if (token) {
             try {
-                // We don't need to verify here, fetching profile does the same job.
-                // If get() fails with a 401, the interceptor will handle logout.
                 await fetchProfile();
                 setUser({ isAuthenticated: true });
             } catch (tokenError) {
                 console.warn('Auth check failed:', tokenError);
-                logout(); // Use the logout function to clean up
+                logout();
             }
         }
         setLoading(false);
-    }, [fetchProfile]);
+    }, [fetchProfile, logout]);
 
 
     useEffect(() => {
@@ -77,20 +81,18 @@ export const AuthProvider = ({ children }) => {
             setError(null);
             setLoading(true);
 
-            // Register user first
             const registerRes = await authAPI.register(userData);
 
-            // Auto login after successful registration
             const loginRes = await login({
                 username: userData.username,
                 password: userData.password
             });
 
-            // ✅ Return consistent structure expected by Signup.js
+
             if (loginRes && loginRes.success) {
                 return {
                     success: true,
-                    data: registerRes.data || loginRes.data, // send user info forward
+                    data: registerRes.data || loginRes.data,
                 };
             } else {
                 return {
@@ -100,7 +102,15 @@ export const AuthProvider = ({ children }) => {
             }
         } catch (error) {
             if (error.response && error.response.status === 400 && error.response.data) {
-                return { success: false, error: error.response.data };
+                const errorData = error.response.data;
+                let firstErrorMessage = 'Sign up failed. Please check the fields below.';
+                if (errorData.detail) {
+                    firstErrorMessage = errorData.detail;
+                } else if (Object.values(errorData).length > 0 && Array.isArray(Object.values(errorData)[0])) {
+                    firstErrorMessage = Object.values(errorData)[0][0];
+                }
+                setError(firstErrorMessage);
+                return { success: false, error: errorData };
             }
 
             const errorMessage = handleAPIError(error);
@@ -111,20 +121,10 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
-
-    const logout = () => {
-        localStorage.removeItem('access_token');
-        localStorage.removeItem('refresh_token');
-        setUser(null);
-        setProfile(null);
-        setError(null);
-    };
-
-    // UPDATED: Added loading state management
     const updateProfile = async (profileData) => {
         try {
             setError(null);
-            setLoading(true); // Set loading true during the update
+            setLoading(true);
             const response = await profileAPI.update(profileData);
             setProfile(response.data);
             return { success: true, data: response.data };
@@ -133,12 +133,11 @@ export const AuthProvider = ({ children }) => {
             setError(errorMessage);
             return { success: false, error: errorMessage };
         } finally {
-            setLoading(false); // Set loading false after update
+            setLoading(false);
         }
     };
 
     const isAuthenticated = () => {
-        // Checking state is more reliable than just the token
         return !!user && !!localStorage.getItem('access_token');
     };
 
@@ -148,9 +147,9 @@ export const AuthProvider = ({ children }) => {
         return requiredFields.every(field => profile[field] != null && profile[field] !== '');
     };
 
-    const clearError = () => {
+    const clearError = useCallback(() => {
         setError(null);
-    };
+    }, []);
 
     const value = {
         user,
@@ -161,7 +160,7 @@ export const AuthProvider = ({ children }) => {
         register,
         logout,
         updateProfile,
-        fetchProfile, // RENAMED
+        fetchProfile,
         isAuthenticated,
         hasCompleteProfile,
         clearError,

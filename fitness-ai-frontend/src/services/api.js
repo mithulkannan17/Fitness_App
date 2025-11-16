@@ -2,14 +2,14 @@ import axios from 'axios';
 
 // Create an Axios instance with a base configuration
 const apiClient = axios.create({
-    baseURL: process.env.REACT_APP_API_URL || 'https://fitness-app-1-2awu.onrender.com/api',
+    baseURL: process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000/api',
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
     },
 });
 
-// Request interceptor to add the auth token to every request
+
 apiClient.interceptors.request.use(
     (config) => {
         const token = localStorage.getItem('access_token');
@@ -21,7 +21,7 @@ apiClient.interceptors.request.use(
     (error) => Promise.reject(error)
 );
 
-// Response interceptor to handle automatic token refresh on 401 errors
+
 apiClient.interceptors.response.use(
     (response) => response,
     async (error) => {
@@ -50,10 +50,9 @@ apiClient.interceptors.response.use(
     }
 );
 
-// --- API Service Objects ---
 
 export const authAPI = {
-    // UPDATED: Corrected paths to match backend
+
     login: (credentials) => apiClient.post('/token/', credentials),
     register: (userData) => apiClient.post('/register/', userData),
     refreshToken: (refreshToken) => apiClient.post('/token/refresh/', { refresh: refreshToken }),
@@ -62,11 +61,11 @@ export const authAPI = {
 
 export const profileAPI = {
     get: () => apiClient.get('/profile/'),
-    update: (data) => apiClient.patch('/profile/', data), // Using PATCH is slightly better for updates
+    update: (data) => apiClient.patch('/profile/', data),
 };
 
 export const activitiesAPI = {
-    list: (params) => apiClient.get('/activities/', { params }), // Allow params for filtering
+    list: (params) => apiClient.get('/activities/', { params }),
     create: (data) => apiClient.post('/activities/', data),
     update: (id, data) => apiClient.patch(`/activities/${id}/`, data), // Kept for future use
     delete: (id) => apiClient.delete(`/activities/${id}/`), // Kept for future use
@@ -101,12 +100,12 @@ export const trainingAPI = {
     getWorkoutDetail: (id) => apiClient.get(`/training/workout/${id}/`),
 };
 
-// NEW: API for performance dashboard
+
 export const performanceAPI = {
     getDashboard: () => apiClient.get('/performance-dashboard/'),
 };
 
-// NEW: API for calendar view
+
 export const calendarAPI = {
     getLogs: (year, month) => apiClient.get(`/calendar-logs/?year=${year}&month=${month}`),
 };
@@ -123,13 +122,12 @@ export const healthAPI = {
     logData: (data) => apiClient.post('/health-data/log/', data),
 };
 
-// NEW: API for achievements and rewards
+
 export const achievementsAPI = {
     getProgress: () => apiClient.get('/achievements/progress/'),
 };
 
 
-// Helper function to create user-friendly error messages
 export const handleAPIError = (error) => {
     if (error.response) {
         const { status, data } = error.response;

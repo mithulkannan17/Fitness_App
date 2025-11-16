@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaDumbbell, FaEye, FaEyeSlash, FaCheckCircle } from 'react-icons/fa';
+import { FaDumbbell, FaEye, FaEyeSlash, FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa';
 import { useAuth } from '../../context/AuthContext';
-import ProfileEditPopup from '../../components/ProfileEditPopup'; // 🆕 Add this popup component
+import ProfileEditPopup from '../../components/ProfileEditPopup';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -17,8 +17,8 @@ const Signup = () => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [localErrors, setLocalErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [showProfilePopup, setShowProfilePopup] = useState(false); // 🆕
-    const [newUser, setNewUser] = useState(null); // 🆕
+    const [showProfilePopup, setShowProfilePopup] = useState(false);
+    const [newUser, setNewUser] = useState(null);
 
     useEffect(() => {
         if (isAuthenticated()) {
@@ -79,8 +79,8 @@ const Signup = () => {
             setIsSubmitting(true);
             const result = await register(formData);
             if (result.success) {
-                setNewUser(result.data); // 🆕 store new user
-                setShowProfilePopup(true); // 🆕 show popup instead of navigating to dashboard
+                setNewUser(result.data);
+                setShowProfilePopup(true);
             } else if (result.error) {
                 if (typeof result.error === 'object') {
                     setLocalErrors(result.error);
@@ -116,7 +116,6 @@ const Signup = () => {
 
     const passwordStrength = getPasswordStrength(formData.password);
 
-    // 🆕 Dynamic color map (to make Tailwind animations work)
     const strengthColorClass = {
         red: 'bg-red-500 text-red-400',
         orange: 'bg-orange-500 text-orange-400',
@@ -146,25 +145,40 @@ const Signup = () => {
                         )}
 
                         <form onSubmit={handleSubmit} className="space-y-6">
+
                             <div>
                                 <label htmlFor="username" className="block text-sm font-medium text-gray-300 mb-2">Username</label>
-                                <input
-                                    type="text" name="username" id="username" required
-                                    value={formData.username} onChange={handleChange} disabled={isSubmitting || loading}
-                                    className={`w-full px-4 py-3 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${getFieldError('username') ? 'border-red-500' : 'border-gray-600'}`}
-                                    placeholder="Choose a unique username"
-                                />
+                                <div className="relative">
+                                    <input
+                                        type="text" name="username" id="username" required
+                                        value={formData.username} onChange={handleChange} disabled={isSubmitting || loading}
+                                        className={`w-full px-4 py-3 pr-10 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${getFieldError('username') ? 'border-red-500' : 'border-gray-600'}`}
+                                        placeholder="Choose a unique username"
+                                    />
+                                    {getFieldError('username') && (
+                                        <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <FaExclamationTriangle className="h-5 w-5 text-red-400" />
+                                        </div>
+                                    )}
+                                </div>
                                 {getFieldError('username') && <p className="mt-1 text-sm text-red-400">{getFieldError('username')}</p>}
                             </div>
 
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
-                                <input
-                                    type="email" name="email" id="email" required
-                                    value={formData.email} onChange={handleChange} disabled={isSubmitting || loading}
-                                    className={`w-full px-4 py-3 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${getFieldError('email') ? 'border-red-500' : 'border-gray-600'}`}
-                                    placeholder="Enter your email address"
-                                />
+                                <div className="relative">
+                                    <input
+                                        type="email" name="email" id="email" required
+                                        value={formData.email} onChange={handleChange} disabled={isSubmitting || loading}
+                                        className={`w-full px-4 py-3 pr-10 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${getFieldError('email') ? 'border-red-500' : 'border-gray-600'}`}
+                                        placeholder="Enter your email address"
+                                    />
+                                    {getFieldError('email') && (
+                                        <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <FaExclamationTriangle className="h-5 w-5 text-red-400" />
+                                        </div>
+                                    )}
+                                </div>
                                 {getFieldError('email') && <p className="mt-1 text-sm text-red-400">{getFieldError('email')}</p>}
                             </div>
 
@@ -177,9 +191,17 @@ const Signup = () => {
                                         className={`w-full px-4 py-3 pr-12 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${getFieldError('password') ? 'border-red-500' : 'border-gray-600'}`}
                                         placeholder="Create a strong password"
                                     />
-                                    <button type="button" onClick={() => setShowPassword(!showPassword)} disabled={isSubmitting || loading} className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                                        {showPassword ? <FaEyeSlash className="h-5 w-5 text-gray-400 hover:text-gray-300" /> : <FaEye className="h-5 w-5 text-gray-400 hover:text-gray-300" />}
-                                    </button>
+                                    <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                        {getFieldError('password') ? (
+                                            <div className="pointer-events-none">
+                                                <FaExclamationTriangle className="h-5 w-5 text-red-400" />
+                                            </div>
+                                        ) : (
+                                            <button type="button" onClick={() => setShowPassword(!showPassword)} disabled={isSubmitting || loading} className="text-gray-400 hover:text-gray-300">
+                                                {showPassword ? <FaEyeSlash className="h-5 w-5" /> : <FaEye className="h-5 w-5" />}
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
 
                                 {formData.password && (
@@ -209,11 +231,19 @@ const Signup = () => {
                                         className={`w-full px-4 py-3 pr-12 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${getFieldError('password_confirm') ? 'border-red-500' : 'border-gray-600'}`}
                                         placeholder="Confirm your password"
                                     />
-                                    <button type="button" onClick={() => setShowConfirmPassword(!showConfirmPassword)} disabled={isSubmitting || loading} className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                                        {showConfirmPassword ? <FaEyeSlash className="h-5 w-5 text-gray-400 hover:text-gray-300" /> : <FaEye className="h-5 w-5 text-gray-400 hover:text-gray-300" />}
-                                    </button>
+                                    <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                        {getFieldError('password_confirm') ? (
+                                            <div className="pointer-events-none">
+                                                <FaExclamationTriangle className="h-5 w-5 text-red-400" />
+                                            </div>
+                                        ) : (
+                                            <button type="button" onClick={() => setShowConfirmPassword(!showConfirmPassword)} disabled={isSubmitting || loading} className="text-gray-400 hover:text-gray-300">
+                                                {showConfirmPassword ? <FaEyeSlash className="h-5 w-5" /> : <FaEye className="h-5 w-5" />}
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
-                                {formData.password_confirm && formData.password && (
+                                {formData.password_confirm && formData.password && !getFieldError('password_confirm') && (
                                     <div className="mt-2 flex items-center">
                                         {formData.password === formData.password_confirm ? (
                                             <div className="flex items-center text-green-400"><FaCheckCircle className="h-4 w-4 mr-1" /><span className="text-xs">Passwords match</span></div>
@@ -240,13 +270,12 @@ const Signup = () => {
                 </div>
             </div>
 
-            {/*  Profile popup after successful signup */}
             {showProfilePopup && (
                 <ProfileEditPopup
                     user={newUser}
                     onClose={() => {
                         setShowProfilePopup(false);
-                        navigate('/'); 
+                        navigate('/');
                     }}
                 />
             )}

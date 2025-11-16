@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            {/* UPDATED: Reverted to a single Floating Action Button for Injury Check */}
             <Link
                 to="/injury-check"
                 className="fixed bottom-6 right-6 bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-red-600 transition z-40"

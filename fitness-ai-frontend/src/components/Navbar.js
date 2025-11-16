@@ -1,25 +1,15 @@
 import React, { useState } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { useTheme } from '../context/ThemeContext';
+
 import {
     FaDumbbell, FaHome, FaUtensils, FaChartLine, FaUser,
-    FaSignOutAlt, FaBars, FaTimes, FaCalendarAlt, FaSun,
-    FaMoon, FaTrophy, FaHeartbeat
+    FaSignOutAlt, FaBars, FaTimes, FaCalendarAlt,
+    FaTrophy, FaHeartbeat
+   
 } from 'react-icons/fa';
 
-const ThemeToggle = () => {
-    const { theme, toggleTheme } = useTheme();
-    return (
-        <button
-            onClick={toggleTheme}
-            className="p-2 rounded-lg hover:bg-white hover:bg-opacity-20 transition-colors"
-            title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        >
-            {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
-        </button>
-    );
-};
+
 
 const Navbar = () => {
     const { profile, logout, hasCompleteProfile } = useAuth();
@@ -36,8 +26,8 @@ const Navbar = () => {
 
     const activeLinkStyle = "flex items-center px-4 py-2 rounded-lg bg-white bg-opacity-20 font-medium transition-colors";
     const inactiveLinkStyle = "flex items-center px-4 py-2 rounded-lg hover:bg-white hover:bg-opacity-20 font-medium transition-colors";
-    const mobileActiveLinkStyle = "flex items-center px-4 py-3 text-indigo-600 bg-indigo-100 rounded-lg font-semibold";
-    const mobileInactiveLinkStyle = "flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors";
+    const mobileActiveLinkStyle = "flex items-center px-4 py-3 text-indigo-600 bg-indigo-100 dark:bg-gray-700 dark:text-indigo-300 rounded-lg font-semibold";
+    const mobileInactiveLinkStyle = "flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors";
 
     const publicNavItems = [
         { to: '/', icon: FaHome, label: 'Dashboard' },
@@ -87,7 +77,9 @@ const Navbar = () => {
 
                     {/* Right Section */}
                     <div className="flex items-center space-x-2">
-                        <ThemeToggle />
+
+                        {/* 3. REMOVED the <ThemeToggle /> component from here */}
+
                         <div className="hidden md:block relative group">
                             <Link to="/profile" className="flex items-center space-x-3 p-2 rounded-lg hover:bg-white hover:bg-opacity-20">
                                 <div className="w-10 h-10 bg-indigo-500 text-white flex items-center justify-center rounded-full border-2 font-bold">

@@ -1,14 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
-import { FaCalendarAlt, FaClock, FaTimes, FaStickyNote } from 'react-icons/fa';
+import { FaCalendarAlt, FaClock, FaTimes, FaStickyNote, FaSpinner } from 'react-icons/fa';
 import { calendarAPI, handleAPIError } from '../services/api';
 
 const LogDetailModal = ({ activities, date, onClose, colors }) => {
     if (!activities || activities.length === 0) return null;
 
+    const renderSetDetails = (set) => {
+        if (set.weight_kg && set.reps) {
+            return (
+                <span className="font-mono font-semibold dark:text-gray-100">
+                    {set.weight_kg}kg x {set.reps} reps
+                </span>
+            );
+        }
+        if (set.duration_minutes && set.distance_km) {
+            return (
+                <span className="font-mono font-semibold dark:text-gray-100">
+                    {set.distance_km}km in {set.duration_minutes} min
+                </span>
+            );
+        }
+        if (set.duration_minutes) {
+            return (
+                <span className="font-mono font-semibold dark:text-gray-100">
+                    {set.duration_minutes} minutes
+                </span>
+            );
+        }
+        return <span className="font-mono font-semibold dark:text-gray-100">--</span>;
+    };
+
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-            {/* UPDATED: Added dark mode classes */}
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-lg max-h-[90vh] flex flex-col">
                 <div className="flex justify-between items-center p-4 border-b dark:border-gray-700">
                     <h2 className="text-lg font-bold dark:text-gray-100">
@@ -32,7 +56,7 @@ const LogDetailModal = ({ activities, date, onClose, colors }) => {
                                     {activity.sets.map((set, index) => (
                                         <div key={index} className="flex justify-between p-2 bg-white dark:bg-gray-600 rounded border dark:border-gray-500">
                                             <span className="dark:text-gray-200">{set.exercise_name}</span>
-                                            <span className="font-mono font-semibold dark:text-gray-100">{set.weight_kg}kg x {set.reps} reps</span>
+                                            {renderSetDetails(set)}
                                         </div>
                                     ))}
                                 </div>
@@ -76,7 +100,7 @@ const CalendarLog = () => {
             }
         };
         fetchLogsForMonth(date);
-    }, [date]);
+    }, [date, setLoading]);
 
     const tileContent = ({ date, view }) => {
         if (view === 'month') {
@@ -107,28 +131,36 @@ const CalendarLog = () => {
 
     return (
         <>
-            <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
-                {/* UPDATED: Added dark mode classes */}
-                <header className="mb-8">
+         
+            <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+
+                <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
                     <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 flex items-center"><FaCalendarAlt className="mr-3 text-indigo-600" />Workout Calendar</h1>
                     <p className="text-gray-600 dark:text-gray-300 mt-2">Click on a day with dots to see the workout details.</p>
-                </header>
+                </div>
 
                 {error && <div className="mb-4 text-red-600 bg-red-50 p-3 rounded">{error}</div>}
 
-                <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
-                    <Calendar
-                        onChange={setDate}
-                        value={date}
-                        tileContent={tileContent}
-                        onActiveStartDateChange={({ activeStartDate }) => setDate(activeStartDate)}
-                        onClickDay={handleDayClick}
-                        className="custom-calendar"
-                    />
-                </div>
+                {loading ? (
+                    <div className="text-center p-12 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+                        <FaSpinner className="animate-spin h-8 w-8 text-indigo-600 dark:text-indigo-300 mx-auto" />
+                        <p className="mt-2 text-gray-500 dark:text-gray-400">Loading calendar...</p>
+                    </div>
+                ) : (
+                    <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
+                        <Calendar
+                            onChange={setDate}
+                            value={date}
+                            tileContent={tileContent}
+                            onActiveStartDateChange={({ activeStartDate }) => setDate(activeStartDate)}
+                            onClickDay={handleDayClick}
+                            className="custom-calendar"
+                        />
+                    </div>
+                )}
 
-                <div className="mt-6">
-                    <h3 className="font-semibold mb-2 dark:text-gray-200">Legend</h3>
+                <div className="mt-6 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm border dark:border-gray-700">
+                    <h3 className="font-semibold mb-3 text-gray-900 dark:text-gray-100">Legend</h3>
                     <div className="flex flex-wrap gap-x-4 gap-y-2">
                         {Object.entries(colors).map(([category, color]) => (
                             <div key={category} className="flex items-center text-sm">

@@ -6,7 +6,7 @@ export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState(() => {
-        // Check for saved theme in localStorage, or default to system preference
+
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             return savedTheme;

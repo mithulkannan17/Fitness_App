@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaRobot, FaDumbbell, FaChartLine, FaHeartbeat } from 'react-icons/fa';
 import heroImage from '../assets/hero-image.jpg'; // Importing the image
 
-// Feature Card Sub-Component
+
 const FeatureCard = ({ icon, title, children }) => (
     <div className="bg-gray-800 bg-opacity-50 p-6 rounded-lg border border-gray-700 backdrop-blur-sm transform hover:-translate-y-2 transition-transform duration-300">
         <div className="flex items-center justify-center w-12 h-12 bg-indigo-600 rounded-lg mb-4">

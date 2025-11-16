@@ -87,15 +87,33 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Style for "Today" */
+/* --- 1. NEW STYLE --- */
+/* Fade out days from previous/next month */
+.custom-calendar .react-calendar__month-view__days__day--neighboring {
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.custom-calendar .react-calendar__month-view__days__day--neighboring:hover {
+    opacity: 0.7;
+}
+
+
+/* --- 2. UPDATED STYLE --- */
+/* Style for "Today" - now uses colored text */
 .custom-calendar .react-calendar__tile--now {
     background: none;
-    border: 1px solid #4F46E5;
-    /* Indigo border */
+    border: none;
+    /* Removed the border */
+    font-weight: bold;
+    color: #818CF8;
+    /* Lighter indigo for dark mode */
 }
 
 .custom-calendar .react-calendar__tile--now:hover {
     background-color: rgba(79, 70, 229, 0.2);
+    color: #C7D2FE;
+    /* Even lighter on hover */
 }
 
 /* Style for the selected day */

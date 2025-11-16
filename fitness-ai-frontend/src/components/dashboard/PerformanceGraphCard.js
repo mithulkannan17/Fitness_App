@@ -9,13 +9,12 @@ import { FaChartLine } from 'react-icons/fa';
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const PerformanceGraphCard = () => {
-    // --- NEW: State for live data, loading, and errors ---
+
     const [chartData, setChartData] = useState({ labels: [], datasets: [] });
     const [summary, setSummary] = useState('');
     const [loading, setLoading] = useState(true);
     const { hasCompleteProfile } = useAuth();
 
-    // --- NEW: Data fetching logic ---
     useEffect(() => {
         if (hasCompleteProfile()) {
             const fetchPerformanceData = async () => {
@@ -24,7 +23,7 @@ const PerformanceGraphCard = () => {
                     const data = response.data;
 
                     if (data && data.volume_over_time && data.volume_over_time.length > 0) {
-                        // Transform API data for the chart
+
                         const labels = data.volume_over_time.map(item => new Date(item.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }));
                         const volumeData = data.volume_over_time.map(item => item.total_volume);
 
@@ -40,7 +39,7 @@ const PerformanceGraphCard = () => {
                             }],
                         });
 
-                        // Set a summary message
+
                         const firstVolume = volumeData[0];
                         const lastVolume = volumeData[volumeData.length - 1];
                         const change = ((lastVolume - firstVolume) / firstVolume * 100).toFixed(0);
@@ -51,7 +50,7 @@ const PerformanceGraphCard = () => {
                         }
 
                     } else {
-                        // Handle case with no data to plot
+
                         setSummary('Log your first workout to start tracking progress.');
                     }
                 } catch (err) {

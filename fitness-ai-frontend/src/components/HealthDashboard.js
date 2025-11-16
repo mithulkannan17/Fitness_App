@@ -17,16 +17,16 @@ const ChartCard = ({ title, children }) => (
 );
 
 const HealthDashboard = () => {
-    const { theme } = useTheme(); // Get the current theme
+    const { theme } = useTheme(); 
     const [history, setHistory] = useState([]);
     const [analysis, setAnalysis] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-    const [isModalOpen, setIsModalOpen] = useState(false); // State for the modal
+    const [isModalOpen, setIsModalOpen] = useState(false); 
 
     const fetchData = async () => {
         try {
-            // No need to set loading true here if we call it from a non-initial load
+        
             const [historyRes, analysisRes] = await Promise.all([
                 healthAPI.getHistory(),
                 healthAPI.getAnalysis()
@@ -36,11 +36,11 @@ const HealthDashboard = () => {
         } catch (err) {
             setError(handleAPIError(err));
         } finally {
-            setLoading(false); // Always set loading false at the end
+            setLoading(false); 
         }
     };
 
-    // Initial data fetch
+    
     useEffect(() => {
         setLoading(true);
         fetchData();
@@ -50,10 +50,10 @@ const HealthDashboard = () => {
 
     const handleLogSuccess = () => {
         setIsModalOpen(false);
-        fetchData(); // Refresh all data after a new log is added
+        fetchData(); 
     };
 
-    // --- ENHANCED CHART OPTIONS ---
+
     const chartOptions = {
         maintainAspectRatio: false,
         scales: {
@@ -73,7 +73,7 @@ const HealthDashboard = () => {
         },
     };
 
-    // --- PREPARE CHART DATA (INCLUDING STEPS) ---
+
     const chartData = {
         labels: history.map(log => log.timestamp).reverse(),
         bp: {

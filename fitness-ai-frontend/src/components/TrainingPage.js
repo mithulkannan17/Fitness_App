@@ -33,7 +33,10 @@ const TrainingPage = () => {
             try {
                 setLoading(true);
                 const response = await trainingAPI.getCategories();
-                setCategories(response.data.results || []);
+
+
+                setCategories(response.data || []);
+
             } catch (err) {
                 setError(handleAPIError(err));
             } finally {

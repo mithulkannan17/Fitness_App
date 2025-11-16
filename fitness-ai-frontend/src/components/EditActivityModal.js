@@ -8,14 +8,14 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
     const [error, setError] = useState('');
 
     useEffect(() => {
-        // Ensure sets has all fields to avoid "uncontrolled component" warnings
+
         const completeSets = activity.sets.map(set => ({
             exercise_name: set.exercise_name || '',
             weight_kg: set.weight_kg || '',
             reps: set.reps || '',
             distance_km: set.distance_km || '',
             duration_minutes: set.duration_minutes || '',
-            ...set // spread remaining fields like id
+            ...set 
         }));
         setFormData({ ...activity, sets: completeSets });
     }, [activity]);
@@ -53,7 +53,6 @@ const EditActivityModal = ({ activity, onClose, onSave }) => {
         setLoading(true);
         setError('');
 
-        // Clean the set data before sending, converting empty strings to null
         const cleanedData = {
             ...formData,
             sets: formData.sets.map(set => ({

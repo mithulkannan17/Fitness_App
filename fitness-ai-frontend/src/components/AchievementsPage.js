@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { achievementsAPI, handleAPIError } from '../services/api';
 import { FaTrophy, FaSpinner, FaCheckCircle } from 'react-icons/fa';
 
-// A sub-component for the progress bar
+
 const ProgressBar = ({ current, target }) => {
     const percentage = target > 0 ? (current / target) * 100 : 0;
     return (

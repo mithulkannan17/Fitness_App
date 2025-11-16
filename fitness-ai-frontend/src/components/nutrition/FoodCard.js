@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLeaf, FaDrumstickBite } from 'react-icons/fa';
 
-// This is the component moved from FoodRecommendations.js
 const FoodCard = ({ food }) => (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-700 dark:border-gray-700 p-4 hover:shadow-md transition">
         <div className="flex items-start space-x-4">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaDumbbell, FaEye, FaEyeSlash } from 'react-icons/fa';
+// 1. IMPORT THE WARNING ICON
+import { FaDumbbell, FaEye, FaEyeSlash, FaExclamationTriangle } from 'react-icons/fa';
 import { useAuth } from '../../context/AuthContext';
 
 const Login = () => {
@@ -32,11 +33,16 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLocalError(''); 
         if (!validateForm()) return;
         try {
             setIsSubmitting(true);
             const result = await login(formData);
             if (result.success) navigate('/');
+       
+            else if (result.error) {
+                setLocalError(result.error);
+            }
         } catch (err) {
             setLocalError('An unexpected error occurred.');
         } finally {
@@ -44,58 +50,68 @@ const Login = () => {
         }
     };
 
+    // 3. CHECK FOR BOTH LOCAL AND AUTH CONTEXT ERRORS
     const displayError = localError || error;
 
     return (
-        // UPDATED: Page background is now dark
         <div className="min-h-screen flex items-center justify-center bg-gray-900 p-4">
             <div className="max-w-md w-full mx-4">
-
-                {/* 1. Outer wrapper for the animated border */}
                 <div className="animated-border-card rounded-2xl">
-                    {/* 2. Inner wrapper for the dark card content */}
-                    {/* We use m-[3px] for a thick border and rounded-xl (12px) which is smaller than rounded-2xl (16px) */}
                     <div className="relative z-10 bg-gray-800 rounded-xl m-[3px] p-8">
-                        {/* Header */}
                         <div className="text-center mb-8">
                             <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-600 rounded-full mb-4">
                                 <FaDumbbell className="h-8 w-8 text-white" />
                             </div>
-                            {/* UPDATED: Text is now light */}
                             <h1 className="text-3xl font-bold text-gray-100 mb-2">Welcome Back!</h1>
                             <p className="text-gray-400">Sign in to continue your fitness journey</p>
                         </div>
 
-                        {/* Error Display */}
                         {displayError && (
                             <div className="mb-6 bg-red-900/50 border border-red-700 rounded-lg p-4">
                                 <p className="text-sm font-medium text-red-200">{displayError}</p>
                             </div>
                         )}
 
-                        {/* Login Form */}
                         <form onSubmit={handleSubmit} className="space-y-6">
+                            {/* 4. UPDATED USERNAME INPUT */}
                             <div>
                                 <label htmlFor="username" className="block text-sm font-medium text-gray-300 mb-2">Username</label>
-                                <input
-                                    type="text" name="username" id="username" required
-                                    value={formData.username} onChange={handleChange} disabled={isSubmitting || loading}
-                                    className="w-full px-4 py-3 bg-gray-700 text-gray-100 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500"
-                                    placeholder="Enter your username"
-                                />
+                                <div className="relative">
+                                    <input
+                                        type="text" name="username" id="username" required
+                                        value={formData.username} onChange={handleChange} disabled={isSubmitting || loading}
+                                        className={`w-full px-4 py-3 pr-10 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${displayError ? 'border-red-500' : 'border-gray-600'}`}
+                                        placeholder="Enter your username"
+                                    />
+                                    {displayError && (
+                                        <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <FaExclamationTriangle className="h-5 w-5 text-red-400" />
+                                        </div>
+                                    )}
+                                </div>
                             </div>
+
+                            {/* 5. UPDATED PASSWORD INPUT */}
                             <div>
                                 <label htmlFor="password" className="block text-sm font-medium text-gray-300 mb-2">Password</label>
                                 <div className="relative">
                                     <input
                                         type={showPassword ? 'text' : 'password'} name="password" id="password" required
                                         value={formData.password} onChange={handleChange} disabled={isSubmitting || loading}
-                                        className="w-full px-4 py-3 pr-12 bg-gray-700 text-gray-100 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                        className={`w-full px-4 py-3 pr-12 bg-gray-700 text-gray-100 border rounded-lg focus:ring-2 focus:ring-indigo-500 ${displayError ? 'border-red-500' : 'border-gray-600'}`}
                                         placeholder="Enter your password"
                                     />
-                                    <button type="button" onClick={() => setShowPassword(!showPassword)} disabled={isSubmitting || loading} className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                                        {showPassword ? <FaEyeSlash className="h-5 w-5 text-gray-400 hover:text-gray-300" /> : <FaEye className="h-5 w-5 text-gray-400 hover:text-gray-300" />}
-                                    </button>
+                                    <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                        {displayError ? (
+                                            <div className="pointer-events-none">
+                                                <FaExclamationTriangle className="h-5 w-5 text-red-400" />
+                                            </div>
+                                        ) : (
+                                            <button type="button" onClick={() => setShowPassword(!showPassword)} disabled={isSubmitting || loading} className="text-gray-400 hover:text-gray-300">
+                                                {showPassword ? <FaEyeSlash className="h-5 w-5" /> : <FaEye className="h-5 w-5" />}
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
 
@@ -104,7 +120,6 @@ const Login = () => {
                             </button>
                         </form>
 
-                        {/* Footer Links */}
                         <div className="mt-6 text-center space-y-4">
                             <p className="text-sm text-gray-400">
                                 Don't have an account?{' '}

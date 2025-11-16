@@ -14,8 +14,8 @@ const SupplementItem = ({ supplement, onClick }) => {
         "Whey Protein": "green",
         "Creatine Monohydrate": "purple",
         "Multivitamin": "blue",
-        "Green Tea Extract": "teal",
-        "Omega-3 Fish Oil": "cyan"
+        "Green Tea Extract": "red",
+        "Omega-3 Fish Oil": "orange"
     };
     const color = colorMap[supplement.name] || 'gray';
     return (
@@ -66,7 +66,7 @@ const Nutrition = () => {
         fetchNutritionData();
     }, [hasCompleteProfile]);
 
-    // --- Function to open the meal modal ---
+
     const handleExpandMeal = async (meal) => {
         setModalLoading(true);
         setModalData({ isOpen: true, meal: meal, suggestions: [] });
@@ -80,7 +80,6 @@ const Nutrition = () => {
         }
     };
 
-    // --- New meal card styling & icons ---
     const mealDisplay = {
         "Breakfast": { icon: <FaCoffee />, bg: 'bg-gradient-to-br from-yellow-400 to-orange-500' },
         "Lunch": { icon: <FaSun />, bg: 'bg-gradient-to-br from-blue-400 to-indigo-500' },
@@ -89,7 +88,7 @@ const Nutrition = () => {
         "Post-Workout": { icon: <FaRunning />, bg: 'bg-gradient-to-br from-pink-500 to-red-500' }
     };
 
-    // --- The old 'mealColors' variable has been removed ---
+
 
     return (
         <>
@@ -190,10 +189,10 @@ const Nutrition = () => {
                 </div>
             </div>
 
-            {/* Supplement Modal (Unchanged) */}
+          
             <SupplementModal supplement={selectedSupplement} onClose={() => setSelectedSupplement(null)} />
 
-            {/* Meal Plan Modal (NEW) */}
+           
             {modalData.isOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col">

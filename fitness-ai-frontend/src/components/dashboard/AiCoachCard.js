@@ -45,7 +45,6 @@ const AiCoachCard = () => {
             };
         }
 
-        // Find the highest priority alert
         const highRisk = analysis.alerts.find(a => a.level === 'High Risk');
         const warning = analysis.alerts.find(a => a.level === 'Warning');
 

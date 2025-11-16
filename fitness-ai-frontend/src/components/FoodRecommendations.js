@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { FaLeaf, FaDrumstickBite, FaSearch, FaFilter, FaTimes } from 'react-icons/fa';
+// import { Link } from 'react-router-dom'; // This was unused
+import { FaFilter, FaTimes } from 'react-icons/fa'; // Removed unused icons
 import { nutritionAPI, handleAPIError } from '../services/api';
 import { useAuth } from '../context/AuthContext';
-import SupplementModal from './nutrition/SupplementModal';
+// import SupplementModal from './nutrition/SupplementModal'; // This was unused
 import FoodCard from './nutrition/FoodCard';
 
 
@@ -29,7 +29,11 @@ const FoodRecommendations = () => {
                 if (filters.max_calories) params.max_calories = filters.max_calories;
 
                 const response = await nutritionAPI.getFoodRecommendations(params);
-                setFoods(response.data.results || []);
+
+                // --- THIS IS THE FIX ---
+                // Data is no longer in "response.data.results", it's just "response.data"
+                setFoods(response.data || []);
+
             } catch (error) {
                 setError(handleAPIError(error));
             } finally {

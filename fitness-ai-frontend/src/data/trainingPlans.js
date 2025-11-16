@@ -1,5 +1,4 @@
-// src/data/trainingPlans.js
-// Static training plan templates - will be replaced by dynamic backend plans
+/
 
 export const trainingPlans = [
     {

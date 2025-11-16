@@ -60,7 +60,7 @@ const WorkoutDetailPage = () => {
             // Still allow the user to log it
             setSelectedExercise({
                 ...exerciseToLog,
-                isCustom: true, // optional flag
+                isCustom: true, 
             });
         }
     };

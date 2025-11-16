@@ -4,13 +4,13 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 import 'chartjs-adapter-date-fns';
 import { performanceAPI, handleAPIError } from '../services/api';
 import { useAuth } from '../context/AuthContext';
-import { useTheme } from '../context/ThemeContext'; // Import useTheme
+import { useTheme } from '../context/ThemeContext'; 
 import { FaChartLine, FaDumbbell, FaFire, FaTrophy } from 'react-icons/fa';
 
-// Register Chart.js components
+
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, ArcElement, Title, Tooltip, Legend, TimeScale, Filler);
 
-// Stat Card for the top summary
+
 const StatCard = ({ title, value, icon, unit }) => (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
         <div className="flex items-center">
@@ -27,7 +27,6 @@ const StatCard = ({ title, value, icon, unit }) => (
     </div>
 );
 
-// Re-usable Chart Card
 const ChartCard = ({ title, children, className = '' }) => (
     <div className={`bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 ${className}`}>
         <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">{title}</h3>
@@ -36,13 +35,12 @@ const ChartCard = ({ title, children, className = '' }) => (
 );
 
 const Performance = () => {
-    const { theme } = useTheme(); // Get theme
+    const { theme } = useTheme();
     const [performanceData, setPerformanceData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     const { hasCompleteProfile } = useAuth();
 
-    // Chart-specific data states
     const [progressChartData, setProgressChartData] = useState(null); // <-- Re-added this
     const [frequencyChartData, setFrequencyChartData] = useState(null);
     const [volumeChartData, setVolumeChartData] = useState(null);
@@ -130,9 +128,9 @@ const Performance = () => {
                 });
             }
         }
-    }, [performanceData, theme]); // Add theme dependency
+    }, [performanceData, theme]);
 
-    // Chart Options (now using theme)
+    
     const commonLineOptions = {
         maintainAspectRatio: false,
         scales: {

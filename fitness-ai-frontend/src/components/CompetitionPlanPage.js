@@ -38,8 +38,6 @@ const CompetitionPlanPage = () => {
         return <div className="text-center p-12"><FaSpinner className="animate-spin h-12 w-12 text-indigo-600 dark:text-indigo-300 mx-auto" /></div>;
     }
 
-    // --- THIS IS THE CRUCIAL FIX ---
-    // This check prevents the code from continuing if 'plan' is null or an error occurred.
     if (error || !plan) {
         return (
             <div className="text-center py-12 max-w-2xl mx-auto">

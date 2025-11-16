@@ -31,11 +31,7 @@ const Dashboard = () => {
 
     const WelcomeCard = () => (
         <div className="animated-border-card rounded-lg mb-8">
-            {/* 2. Inner wrapper for content. 
-                  - rounded-md (6px) is 2px smaller than rounded-lg (8px)
-                  - m-[2px] creates the border thickness
-                  - All original classes are preserved here.
-             */}
+            
             <div className="relative z-10 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-md shadow-lg p-6 text-white m-[2px]">
                 <h1 className="text-2xl font-bold">Welcome back, {profile?.first_name || 'User'}!</h1>
                 <p className="text-indigo-100">Here's your fitness overview for today.</p>
@@ -62,7 +58,7 @@ const Dashboard = () => {
                 </div>
             )}
 
-            {/* 1. Outer wrapper with animation class */}
+    
             <div className="animated-border-card">
                 {/* 2. Inner wrapper for the content, matching the card's original styles */}
                 <div className="relative z-10 bg-gray-100 border border-gray-200 dark:bg-gray-800 rounded-[11px] m-[2px] p-6">

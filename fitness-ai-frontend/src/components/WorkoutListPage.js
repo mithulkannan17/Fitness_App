@@ -13,27 +13,25 @@ import LogExerciseModal from "./training/LogExerciseModal";
 
 const WorkoutCard = ({ workout }) => {
     const getImageUrl = (url) => {
-        // 🩹 Safeguard against undefined/null values
+        
         if (!url || typeof url !== "string") {
             return "https://raw.githubusercontent.com/mithulkannan17/FitMind_images/main/default.png";
         }
 
-        // 🧠 Convert GitHub "blob" URLs → direct "raw" URLs
         if (url.includes("github.com/") && url.includes("/blob/")) {
             url = url
                 .replace("github.com/", "raw.githubusercontent.com/")
                 .replace("/blob/", "/");
         }
 
-        // 🧰 Use a CORS-safe proxy for GitHub-hosted images
+     
         if (url.includes("raw.githubusercontent.com")) {
             return `https://images.weserv.nl/?url=${encodeURIComponent(url)}`;
         }
 
-        // 🖥️ Normal absolute or backend-hosted URLs
+      
         if (url.startsWith("http")) return url;
 
-        // 📦 Local backend static file
         return `${process.env.REACT_APP_API_URL || "http://127.0.0.1:8000"
             }${url}`;
     };
@@ -41,7 +39,7 @@ const WorkoutCard = ({ workout }) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [hasError, setHasError] = useState(false);
 
-    // Debug
+    
     console.log("✅ Workout Image URL:", workout.name, getImageUrl(workout?.imageUrl));
 
     return (

@@ -11,33 +11,79 @@ const InjuryCheck = () => {
 
     const availableSymptoms = [
         { id: 'sharp_pain', label: 'Sharp, sudden pain', value: 'sharp pain' },
-        { id: 'swelling', label: 'Visible swelling', value: 'swelling' },
-        { id: 'limited_movement', label: 'Limited range of motion', value: 'limited movement' },
-        { id: 'popping_sound', label: 'A "popping" sound when injured', value: 'popping sound' },
         { id: 'dull_ache', label: 'Persistent dull ache', value: 'dull ache' },
+        { id: 'swelling', label: 'Visible swelling', value: 'swelling' },
+        { id: 'bruising', label: 'Bruising or discoloration', value: 'bruising' },
+        { id: 'limited_movement', label: 'Limited range of motion', value: 'limited movement' },
+        { id: 'instability', label: 'Feeling of instability', value: 'instability' },
+        { id: 'popping_sound', label: 'Popping or clicking sound', value: 'popping sound' },
+        { id: 'weakness', label: 'Muscle weakness', value: 'weakness' },
         { id: 'weak_grip', label: 'Weak grip or strength', value: 'weak grip' },
         { id: 'stiffness', label: 'Stiffness in the area', value: 'stiffness' },
         { id: 'numbness', label: 'Numbness or tingling', value: 'numbness' },
-        { id: 'bruising', label: 'Bruising or discoloration', value: 'bruising' },
-        { id: 'instability', label: 'Feeling of instability', value: 'instability' },
+        { id: 'tingling', label: 'Tingling sensation', value: 'tingling' },
+        { id: 'radiating_pain', label: 'Radiating or nerve pain', value: 'radiating pain' },
+        { id: 'difficulty_bending', label: 'Difficulty bending joint', value: 'difficulty bending' },
         { id: 'confusion', label: 'Confusion or disorientation', value: 'confusion' },
         { id: 'headache', label: 'Headache', value: 'headache' },
         { id: 'nausea', label: 'Nausea', value: 'nausea' },
-        { id: 'stiff_neck', label: 'Stiffness in neck', value: 'stiff neck' },
-        { id: 'difficulty_bending', label: 'Difficulty bending joint', value: 'difficulty bending' },
-        { id: 'weakness', label: 'Muscle weakness', value: 'weakness' },
         { id: 'deformity', label: 'Visible deformity', value: 'deformity' },
-        { id: 'radiating_pain', label: 'Radiating pain', value: 'radiating pain' },
-        { id: 'tingling', label: 'Tingling sensation', value: 'tingling' }
+        { id: 'muscle_spasm', label: 'Muscle spasm or tightness', value: 'muscle spasm' },         
+        { id: 'clicking', label: 'Clicking sound in joint', value: 'clicking' },                     
+        { id: 'tenderness', label: 'Tenderness when touching area', value: 'tenderness' },           
+        { id: 'stinging', label: 'Stinging or burning pain', value: 'stinging pain' },               
+        { id: 'difficulty_walking', label: 'Difficulty walking', value: 'difficulty walking' },      
+        { id: 'cramping', label: 'Muscle cramping', value: 'cramping' },                             
+        { id: 'throbbing', label: 'Throbbing pain', value: 'throbbing pain' },                       
+        { id: 'joint_locking', label: 'Joint locking or catching', value: 'joint locking' }         
     ];
+
 
 
     const bodyParts = [
-        'Head', 'Neck', 'Shoulder', 'Upper Back', 'Lower Back', 'Chest',
-        'Abdomen', 'Elbow', 'Wrist', 'Hand', 'Finger',
-        'Hip', 'Thigh', 'Knee', 'Calf', 'Ankle', 'Foot', 'Toe',
-        'Shin', 'Groin', 'Forearm', 'Achilles Tendon'
+        'Head',
+        'Neck',
+        'Shoulder',
+        'Upper Back',
+        'Lower Back',
+        'Chest',
+        'Ribs',
+        'Abdomen',
+
+        'Hip',
+        'Groin',
+        'Glutes',
+        'Pelvis',
+
+        'Thigh',
+        'Hamstring',
+        'Quadriceps',
+        'IT Band',
+        'Outer Thigh',
+        'Inner Thigh',
+
+        'Knee',
+        'Patellar Tendon',
+        'MCL',
+        'LCL',
+
+        'Calf',
+        'Shin',
+        'Achilles Tendon',
+
+        'Ankle',
+        'Foot',
+        'Heel',
+        'Toe',
+
+        'Elbow',
+        'Forearm',
+        'Wrist',
+        'Hand',
+        'Finger',
+        'Thumb'
     ];
+
 
 
     const handleSymptomChange = (e) => {

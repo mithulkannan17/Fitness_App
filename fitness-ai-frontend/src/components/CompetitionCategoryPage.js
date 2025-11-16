@@ -23,7 +23,9 @@ const CompetitionCategoryPage = () => {
         const fetchCategories = async () => {
             try {
                 const response = await championSpaceAPI.getCategories();
-                setCategories(response.data.results || []);
+
+                setCategories(response.data || []);
+
             } catch (err) {
                 setError(handleAPIError(err));
             } finally {

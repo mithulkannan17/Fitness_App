@@ -5,24 +5,21 @@ import {
     FaPlus,
     FaCalendarAlt,
     FaClock,
-    FaStickyNote,
     FaTrash,
     FaDumbbell,
-    FaEdit,
-    FaRunning,
-    FaHeartbeat
+    FaEdit
 } from 'react-icons/fa';
 import { activitiesAPI, fitnessActivitiesAPI, handleAPIError } from '../services/api';
 
 
 const getLocalDateString = (date) => {
     const yyyy = date.getFullYear();
-    const mm = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const mm = String(date.getMonth() + 1).padStart(2, '0'); 
     const dd = String(date.getDate()).padStart(2, '0');
     return `${yyyy}-${mm}-${dd}`;
 };
 
-// --- Define categories outside the component ---
+
 const activityCategories = [
     { value: 'Strength', label: 'Strength' },
     { value: 'Cardio', label: 'Cardio' },
@@ -31,14 +28,14 @@ const activityCategories = [
     { value: 'Recovery', label: 'Recovery' },
 ];
 
-// --- Helper to get default log type from category ---
+
 const getLogTypeForCategory = (category) => {
     if (category === 'Strength') return 'weight';
     if (category === 'Cardio') return 'cardio';
     return 'duration'; // Default for Flexibility, Sport, Recovery
 };
 
-// --- NEW: Sub-component for the set type buttons ---
+
 const LogTypeButton = ({ label, isActive, onClick }) => (
     <button
         type="button"
@@ -69,7 +66,7 @@ const ActivityLog = () => {
         duration: '',
         notes: '',
         sets: [{
-            logType: 'weight', // Each set now has its own logType
+            logType: 'weight',
             exercise_name: '',
             weight_kg: '',
             reps: '',
@@ -83,7 +80,6 @@ const ActivityLog = () => {
     const navigate = useNavigate();
     const prefilledWorkout = location.state?.prefilledWorkout;
 
-    // Load activities & activity types
     useEffect(() => {
         const loadInitialData = async () => {
             try {
@@ -107,7 +103,6 @@ const ActivityLog = () => {
         loadInitialData();
     }, []);
 
-    // Handle prefilled workout
     useEffect(() => {
         if (prefilledWorkout && fitnessActivities.length > 0) {
             const matchedActivity = fitnessActivities.find(
@@ -125,7 +120,7 @@ const ActivityLog = () => {
                 ...initialFormState,
                 name: prefilledWorkout.name,
                 sets: prefilledWorkout.exercises.map(ex => ({
-                    logType: defaultLogType, // Set default log type for each exercise
+                    logType: defaultLogType,
                     exercise_name: ex.name,
                     weight_kg: '',
                     reps: '',
@@ -139,7 +134,6 @@ const ActivityLog = () => {
     }, [prefilledWorkout, fitnessActivities, navigate]);
 
 
-    // Handle main form changes (Category, Name, Date, etc.)
     const handleChange = (e) => {
         const { name, value } = e.target;
 
@@ -154,7 +148,7 @@ const ActivityLog = () => {
                 date: prev.date,
                 duration: prev.duration,
                 sets: [{
-                    logType: newLogType, // Set the default for the first set
+                    logType: newLogType,
                     exercise_name: '', weight_kg: '', reps: '', distance_km: '', duration_minutes: ''
                 }]
             }));
@@ -164,7 +158,7 @@ const ActivityLog = () => {
         setNewActivity(prev => ({ ...prev, [name]: value }));
     };
 
-    // --- NEW: Handler for changing a set's log type ---
+
     const handleSetLogTypeChange = (index, newLogType) => {
         const updatedSets = [...newActivity.sets];
         updatedSets[index].logType = newLogType;
@@ -176,7 +170,7 @@ const ActivityLog = () => {
         setNewActivity(prev => ({ ...prev, sets: updatedSets }));
     };
 
-    // Handler for changing a set's inputs (name, weight, reps, etc.)
+
     const handleSetChange = (index, e) => {
         const { name, value } = e.target;
         const updatedSets = [...newActivity.sets];
@@ -186,14 +180,14 @@ const ActivityLog = () => {
 
     const addSet = () => {
         const lastSet = newActivity.sets[newActivity.sets.length - 1];
-        // New sets default to the logType of the *previous* set.
+
         const newLogType = lastSet?.logType || getLogTypeForCategory(selectedCategory);
 
         setNewActivity(prev => ({
             ...prev,
             sets: [...prev.sets, {
                 logType: newLogType,
-                exercise_name: '', // Start with a blank exercise name
+                exercise_name: '',
                 weight_kg: '', reps: '', distance_km: '', duration_minutes: ''
             }]
         }));
@@ -206,7 +200,7 @@ const ActivityLog = () => {
         }));
     };
 
-    // --- UPDATED: handleSubmit now checks each set's individual logType ---
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!newActivity.name.trim()) {
@@ -250,7 +244,7 @@ const ActivityLog = () => {
                 date: newActivity.date,
                 duration: newActivity.duration ? parseInt(newActivity.duration, 10) : null,
                 notes: newActivity.notes,
-                // We find the *first* matching activity to link, or send null
+
                 fitness_activity_id: (fitnessActivities.find(fa => fa.name.toLowerCase() === newActivity.name.toLowerCase())?.id || null),
                 sets: setsToSubmit
             };
@@ -369,7 +363,7 @@ const ActivityLog = () => {
                                 </div>
                             </div>
 
-                            {/* --- UPDATED SETS SECTION --- */}
+
                             <div className="space-y-4">
                                 <h3 className="text-lg font-semibold border-t pt-4 dark:text-red-500">Sets</h3>
                                 {newActivity.sets.map((set, index) => (
@@ -468,7 +462,6 @@ const ActivityLog = () => {
                     </div>
                 </div>
 
-                {/* Activity History */}
                 <div className="lg:col-span-2">
                     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border dark:border-gray-700">
                         <div className="px-6 py-4 border-b dark:border-gray-700">
@@ -513,7 +506,6 @@ const ActivityLog = () => {
                 </div>
             </div>
 
-            {/* Edit Modal */}
             {editingActivity && (
                 <EditActivityModal
                     activity={editingActivity}

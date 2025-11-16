@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance with a base configuration
 const apiClient = axios.create({
-    baseURL: process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000/api',
+    baseURL: process.env.REACT_APP_API_URL || 'https://fitness-app-1-2awu.onrender.com/api',
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
